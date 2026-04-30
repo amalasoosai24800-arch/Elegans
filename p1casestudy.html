@@ -1,0 +1,445 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Creative Branding Agency | Elegans</title>
+<meta name="description" content="Elegans is a creative branding agency offering premium brand identity, social media, and digital experiences. Build your brand with Elegans.">
+<meta name="keywords" content="Branding, Experience, Social Media, Merchandise, Premium Animation, 3D Effects">
+<meta name="author" content="Elegans Branding Agency">
+<!-- Open Graph Meta Tags -->
+<meta property="og:type" content="website">
+<meta property="og:title" content="Creative Branding Agency | Elegans">
+<meta property="og:description" content="Elegans is a creative branding agency delivering premium brand identity, digital experiences, and social media solutions.">
+<meta property="og:url" content="https://elegans.com/">
+<meta property="og:image" content="https://elegans.com/images/og-image.jpg">
+<meta property="og:site_name" content="Elegans">
+<meta property="og:locale" content="en_IN">
+<!-- Twitter Card -->
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="Creative Branding Agency | Elegans">
+<meta name="twitter:description" content="Premium branding, digital experiences, and social media solutions by Elegans.">
+<meta name="twitter:image" content="https://elegans.com/images/og-image.jpg">
+
+<link rel="icon" type="image/png" sizes="32x32" href="./image/favicon-32.png">
+<link rel="icon" type="image/png" sizes="16x16" href="./image/favicon-16.png">
+<link rel="apple-touch-icon" href="./image/apple-touch-icon.png">
+<link rel="canonical" href="https://elegans.com/">
+<link rel="stylesheet" href="./css/styles.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" integrity="sha512-..." crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+
+<!-- GSAP -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"></script>
+<!-- ScrollToPlugin--.>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollToPlugin.min.js"></script>-->
+
+<style>
+    *{
+margin:0;
+padding:0;
+box-sizing:border-box;
+
+}
+
+body{
+background:black;
+
+}
+
+
+
+/* NAVBAR */
+
+.navbar{
+display:flex;
+justify-content:space-between;
+align-items:center;
+padding:30px 80px;
+position:sticky;
+top:0;
+background:black;
+z-index:10;
+}
+
+.navbar nav a{
+margin-left:30px;
+text-decoration:none;
+color:black;
+font-size:14px;
+}
+
+.active{
+border:1px solid black;
+padding:8px 18px;
+border-radius:20px;
+}
+
+
+
+/* HERO */
+
+.hero{
+position:relative;
+height:90vh;
+overflow:hidden;
+border-radius:80px;
+margin:40px;
+}
+
+.hero-img{
+width:100%;
+height:100%;
+object-fit:fill;
+}
+
+.hero-text{
+position:absolute;
+bottom:60px;
+left:600px;
+color:white;
+}
+
+.hero-text h1{
+font-size:55px;
+line-height:1.1;
+font-weight:300;
+}
+
+
+
+/* INTRO */
+
+.intro{
+padding:50px 120px;
+max-width:900px;
+color: white;
+}
+
+.intro h2{
+font-size:50px;
+margin-bottom:30px;
+font-weight:400;
+}
+
+.intro p{
+margin-bottom:20px;
+font-size:18px;
+line-height:1.6;
+}
+
+
+/* MEDIA */
+
+.media{
+margin:80px 40px;
+border-radius:70px;
+overflow:hidden;
+}
+
+.media video{
+width:100%;
+}
+
+
+
+/* TEXT SECTION */
+
+.text-section{
+padding:120px;
+max-width:900px;
+color: white;
+}
+
+.text-section h2{
+font-size:50px;
+margin-bottom:30px;
+font-weight:400;
+}
+
+.text-section p{
+font-size:18px;
+line-height:1.6;
+}
+
+
+
+/* GALLERY */
+
+.gallery{
+display:grid;
+grid-template-columns:repeat(4,1fr);
+gap:30px;
+padding:80px;
+}
+
+.card{
+overflow:hidden;
+border-radius:20px;
+}
+
+.card img{
+width:100%;
+height:100%;
+object-fit:cover;
+transition:0.4s;
+}
+
+.card:hover img{
+transform:scale(1.1);
+}
+</style>
+
+</head>
+
+<body>
+ 
+<!-- PRELOADER -->
+<div id="preloader">
+    <img src="image/Elegans Branding_logo.svg" class="logos" alt="Company Logo Loading...">
+
+    <div class="loading-wrapper">
+        <div class="loading-outline">LOADING...</div>
+        <div class="loading-fill">LOADING...</div>
+    </div>
+</div>
+
+
+<!-- HEADER -->
+<header>
+  <div class="logo"><a href="index.html"><img src="./image/Elegans_logo.png" alt="Elegans_Logo"></a></div>
+  <div class="header-actions">
+    <a href="contact.html" class="btn-talk">Let’s Talk</a>
+    <button class="menu-btn" id="menuBtn">MENU</button>
+  </div>
+  <div class="menu-popup" id="menuPopup">
+    <a href="index.html">Home</a>
+    <a href="aboutelegans.html">About Us</a>
+    <a href="services.html">Services</a>
+    <a href="work.html">Work</a>
+    <a href="culture.html">Culture</a>
+  </div>
+</header>
+
+
+
+<!-- HERO SECTION -->
+
+<section class="hero">
+
+    <img src="/image/dramabanner.png" class="hero-img">
+
+    <!--<div class="hero-text">
+        <h1>
+            A Brutally Refreshing
+            twist to launching the UK’s<br>
+            most exciting new cider.
+        </h1>
+    </div>-->
+
+</section>
+
+
+<!-- INTRO SECTION -->
+
+<section class="intro">
+
+<h2>And a Brutally Refreshingly challenge for team Paradise.</h2>
+
+<p>
+Brutal Fruit isn’t your average cider – a sparkling blend of Ruby Apple,
+citrus, and spice with a light spritz, balancing sophistication and fun.
+</p>
+
+<p>
+AB InBev tasked Paradise with disrupting the UK cider market,
+delivering 300,000 samples to get the liquid on the nation’s lips.
+</p>
+
+</section>
+
+
+<!-- VIDEO / IMAGE SECTION -->
+
+<section class="media">
+
+<video autoplay muted loop>
+<source src="/video/10.mp4" type="video/mp4">
+</video>
+
+</section>
+
+
+<!-- TEXT SECTION -->
+
+<section class="text-section">
+
+<h2>
+Tracking 2024’s biggest movement – the Taylor Swift Era’s Tour.
+</h2>
+
+<p>
+From London to Manchester, Henley to Birmingham, our vibrant bus toured the UK,
+getting Brutal Fruit on the nation’s lips with over 300,000 samples shared.
+</p>
+
+</section>
+
+
+<!-- GALLERY -->
+
+<section class="gallery">
+
+<div class="card">
+<img src="/image/drama1.png">
+</div>
+
+<div class="card">
+<img src="/image/drama2.png">
+</div>
+
+<div class="card">
+<img src="/image/drama3.png">
+</div>
+
+<div class="card">
+<img src="/image/drama4.png">
+</div>
+
+
+<div class="card">
+<img src="/image/drama5.png">
+</div>
+
+<div class="card">
+<img src="/image/drama6.png">
+</div>
+
+<div class="card">
+<img src="/image/drama7.png">
+</div>
+
+<div class="card">
+<img src="/image/drama8.png">
+</div>
+
+
+</section>
+
+
+<!-- ================= FOOTER ================= -->
+<!-- ================= FOOTER ================= -->
+<footer class="footer">
+
+  <div class="footer-inner">
+
+    <!-- Column 1 – Brand -->
+    <div class="footer-brand">
+      <img src="./image/logo_elegans_tm.png" alt="ELEGANS Creative Branding Studio Logo" class="footer-logo">
+      <p class="footer-desc">
+        Creative branding studio delivering brand strategy, 
+        visual identity, digital campaigns, and 
+        storytelling for global brands.
+
+      </p>
+    </div>
+
+    <!-- Column 2 – Contact -->
+    <div class="footer-contact">
+      <h3>Contact</h3>
+      <p>
+        <strong>Email</strong><br>
+        <a href="mailto:contact@elegansinc.com">contact@elegansinc.com</a>
+      </p>
+      <p>
+        <strong>Phone</strong><br>
+        <a href="tel:+919176040552">+91 91760 40552 </a>
+      </p>
+    </div>
+
+    <!-- Column 3 – Addresses -->
+    <!-- Column 3 – Locations -->
+<div class="footer-addresses">
+  <h3>Our Locations</h3>
+
+  <ul class="location-list">
+    <li data-city="Chennai, India"
+        data-address="Janaki Building, B1, 20,Sardar Patel Rd, next to GRT JEWELLERS, Adyar, Chennai, Tamil Nadu 600020">
+        India
+    </li>
+
+    <!--<li data-city="Dubai"
+        data-address="45 Design Avenue, Dubai">
+        Dubai
+    </li>-->
+
+    <li data-city="London, UK"
+        data-address="78 Branding Road, London, United Kingdom">
+        United Kingdom
+    </li>
+  </ul>
+</div>
+
+
+    <!-- Column 4 – Social -->
+    <div class="footer-social">
+      <h3>Follow Us</h3>
+      <div class="social-icons">
+        <a href="https://www.instagram.com/elegansinc/" target="_blank"  aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+        <a href="https://www.linkedin.com/company/elegansagency/" target="_blank" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+        <a href="https://www.facebook.com/elegansinc/" target="_blank" aria-label="FaceBook"><i class="fab fa-facebook"></i></a>
+        
+      </div>
+    </div>
+
+  </div>
+
+  <!-- Bottom bar -->
+  <div class="footer-bottom">
+    <p>© <span id="footerYear"></span> ELEGANS — All Rights Reserved</p>
+    <p>Creative Branding Studio | India • UK</p>
+  </div>
+ 
+</footer>
+
+<!-- LOCATION POPUP -->
+<div id="location-popup" class="location-popup">
+  <div class="location-box">
+    
+    <span id="popup-close">×</span>
+
+    <h3 id="popup-city"></h3>
+    <p id="popup-address"></p>
+
+  </div>
+</div>
+
+<!-- ============ BACK TO TOP ARROW ============ -->
+<div id="topBtn" class="top-arrow">
+    <i class="fa-solid fa-arrow-up"></i>
+</div>
+
+<script>
+    const cards = document.querySelectorAll(".card");
+
+window.addEventListener("scroll", () => {
+
+cards.forEach(card => {
+
+const rect = card.getBoundingClientRect();
+
+if(rect.top < window.innerHeight - 100){
+card.style.opacity = 1;
+card.style.transform = "translateY(0)";
+}
+
+});
+
+});
+</script>
+
+
+<script src="./js/script.js"></script>
+</body>
+</html>

@@ -1,0 +1,255 @@
+:root{
+  --gold:#d9ac47;
+  --bg:#000;
+}
+
+*{ box-sizing:border-box; }
+
+html,body{
+  margin:0;
+  height:100%;
+  overflow:hidden;
+  font-family:"azo-sans",minion pro;
+  background:var(--bg);
+  color:#fff;
+}
+
+/* HEADER (LOGO + CLOSE) */
+.header{
+  position:fixed;
+  top:0; left:0; right:0;
+  height:70px;
+  display:flex;
+  align-items:center;
+  padding:0 22px;
+  z-index:1000;
+}
+
+.logo img{
+  padding-top: 15px;
+  height:65px;
+}
+
+/* CLOSE BUTTON */
+.close-btn{
+  margin-left:auto;
+  background:none;
+  border:0;
+  cursor:pointer;
+}
+
+/* PAGE */
+.page{
+  height:100vh;
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  padding:90px 20px 20px;
+}
+
+/* CONTAINER */
+.container{
+  width:100%;
+  max-width:1100px;
+  max-height:620px;
+  height:100%;
+  display:flex;
+  border-radius:22px;
+  overflow:hidden;
+  background:linear-gradient(180deg,#0c0c0c,#050505);
+  border:1px solid rgba(217,172,71,.2);
+  box-shadow:
+    0 40px 90px rgba(0,0,0,.65),
+    0 0 60px rgba(217,172,71,.12);
+}
+
+/* LEFT */
+.left{
+  width:50%;
+  padding:34px;
+  background:#000;
+  display:flex;
+  flex-direction:column;
+  justify-content:center;
+}
+
+.left h1{
+  margin:0 0 14px;
+  font-size:42px;
+  font-weight: 700;
+  color:var(--gold);
+}
+
+/* FORM */
+label{
+  font-size:18px;
+  margin-top:12px;
+}
+
+input, textarea{
+  width:100%;
+  margin-top:6px;
+  padding:12px;
+  background:#151515;
+  border:1px solid #333;
+  border-radius:8px;
+  color:#fff;
+}
+
+textarea{ height:90px; resize:none; }
+
+input:focus, textarea:focus{
+  outline:none;
+  border-color:var(--gold);
+  box-shadow:0 0 0 2px rgba(217,172,71,.25);
+}
+
+button{
+  margin-top:18px;
+  padding:13px;
+  background:var(--gold);
+  color:#000;
+  border:none;
+  border-radius:10px;
+  font-weight:600;
+  cursor:pointer;
+}
+
+/* LOADER */
+#loading{
+  display:none;
+  width:30px;
+  height:30px;
+  border:4px solid #444;
+  border-top:4px solid var(--gold);
+  border-radius:50%;
+  animation:spin 1s linear infinite;
+  margin:12px auto 0;
+}
+
+@keyframes spin{100%{transform:rotate(360deg);}}
+
+/* RIGHT */
+.right{
+  width:50%;
+  padding:34px;
+  background:
+    linear-gradient(rgba(0,0,0,.55),rgba(0,0,0,.8)),
+    url("./image/elogo1.jpg") center/cover no-repeat;
+  display:flex;
+  flex-direction:column;
+  justify-content:center;
+}
+
+.info{
+  background:rgba(0,0,0,.55);
+  padding:18px;
+  border-radius:12px;
+  border-left:4px solid var(--gold);
+  margin-bottom:14px;
+}
+
+.info h2{
+  margin:0;
+  font-size:16px;
+  color:var(--gold);
+}
+
+.info p{
+  margin:6px 0 0;
+  font-size:16px;
+  color:#fff;
+}
+
+.location{
+  margin-top:6px;
+  display:inline-block;
+  color:var(--gold);
+  text-decoration:none;
+  font-size:14px;
+}
+
+/* WAVE ANIMATION */
+.wave{
+  opacity:0;
+  transform:translateY(26px);
+  transition:
+    opacity .6s ease,
+    transform .7s cubic-bezier(.22,1,.36,1);
+}
+
+.wave.show{
+  opacity:1;
+  transform:none;
+}
+
+/* SUCCESS */
+#success{
+  position:fixed;
+  inset:50% auto auto 50%;
+  transform:translate(-50%,-50%);
+  background:#111;
+  border:1px solid var(--gold);
+  padding:24px 30px;
+  border-radius:12px;
+  display:none;
+  z-index:2000;
+}
+
+/* RESPONSIVE */
+@media(max-width:900px){
+  .container{ flex-direction:column; max-height:100%; }
+  .left,.right{ width:100%; padding:26px; }
+}
+
+
+
+/* ================= SIDE SOCIAL ICONS ================= */
+.side-socials {
+  position: fixed;
+  right: 20px;
+  top: 50%;
+  transform: translateY(-50%);
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+  z-index: 1200;
+}
+
+.side-socials a {
+  width: 46px;
+  height: 46px;
+  border-radius: 50%;
+  text-decoration: none;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #fff;
+  font-size: 20px;
+  transition: all 0.35s cubic-bezier(.16,1,.3,1);
+  box-shadow: 0 0 0 rgba(0,0,0,0);
+}
+
+/* Brand colors */
+.side-socials .whatsapp { background: #25D366; }
+.side-socials .instagram { background: radial-gradient(circle at 30% 110%, #fdf497 0%, #fd5949 45%, #d6249f 60%, #285AEB 90%); }
+.side-socials .linkedin { background: #0077B5; }
+.side-socials .gmail { background: #EA4335; }
+
+/* Hover effect */
+.side-socials a:hover {
+  transform: translateX(-6px) scale(1.08);
+  box-shadow: 0 0 22px rgba(0,0,0,.45);
+}
+
+/* Mobile adjust */
+@media (max-width: 768px) {
+  .side-socials {
+    right: 12px;
+  }
+  .side-socials a {
+    width: 42px;
+    height: 42px;
+    font-size: 18px;
+  }
+}

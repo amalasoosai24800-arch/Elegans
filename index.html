@@ -1,0 +1,465 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Creative Branding Agency | Elegans</title>
+<meta name="description" content="Elegans is a creative branding agency offering premium brand identity, social media, and digital experiences. Build your brand with Elegans.">
+<meta name="keywords" content="Branding, Experience, Social Media, Merchandise, Premium Animation, 3D Effects">
+<meta name="author" content="Elegans Branding Agency">
+<!-- Open Graph Meta Tags -->
+<meta property="og:type" content="website">
+<meta property="og:title" content="Creative Branding Agency | Elegans">
+<meta property="og:description" content="Elegans is a creative branding agency delivering premium brand identity, digital experiences, and social media solutions.">
+<meta property="og:url" content="https://elegans.com/">
+<meta property="og:image" content="https://elegans.com/images/og-image.jpg">
+<meta property="og:site_name" content="Elegans">
+<meta property="og:locale" content="en_IN">
+<!-- Twitter Card -->
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="Creative Branding Agency | Elegans">
+<meta name="twitter:description" content="Premium branding, digital experiences, and social media solutions by Elegans.">
+<meta name="twitter:image" content="https://elegans.com/images/og-image.jpg">
+
+<link rel="icon" type="image/png" sizes="32x32" href="./image/favicon-32.png">
+<link rel="icon" type="image/png" sizes="16x16" href="./image/favicon-16.png">
+<link rel="apple-touch-icon" href="./image/apple-touch-icon.png">
+<link rel="canonical" href="https://elegans.com/">
+<link rel="stylesheet" href="./css/styles.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" integrity="sha512-..." crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+
+<!-- GSAP -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"></script>
+<!-- ScrollToPlugin-->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollToPlugin.min.js"></script>
+
+
+
+</head>
+
+<body>
+ 
+<!-- PRELOADER -->
+<div id="preloader">
+    <img src="image/Elegans Branding_logo.svg" class="logos" alt="Company Logo Loading...">
+
+    <div class="loading-wrapper">
+        <div class="loading-outline">UNFOLDING...</div>
+        <div class="loading-fill">UNFOLDING...</div>
+    </div>
+</div>
+
+
+<!-- HEADER -->
+<header>
+  <div class="logo"><a href="index.html"><img src="./image/Elegans_logo.png" alt="Elegans_Logo"></a></div>
+  <div class="header-actions">
+    <a href="contact.html" class="btn-talk">Let’s Talk</a>
+    <button class="menu-btn" id="menuBtn">MENU</button>
+  </div>
+  <div class="menu-popup" id="menuPopup">
+    <a href="index.html">Home</a>
+    <a href="aboutelegans.html">Our Philosophy</a>
+    <a href="services.html">Services</a>
+    <a href="work.html">Our Work</a>
+    <a href="culture.html">Our DNA</a>
+  </div>
+</header>
+
+
+
+<!-- HERO -->
+<section class="hero">
+  <video src="./video/showreel.mp4" autoplay muted loop></video>
+  <div class="hero-text" id="heroTextContainer"></div>
+</section>
+
+<section class="services-section">
+  <h2 class="services-title"> Our Services</h2>
+
+  <div class="services-grid">
+    <div class="services-panel">
+      <video src="./video/Creative.mp4" muted loop playsinline></video>
+      <span>CREATIVE</span>
+    </div>
+
+    <div class="services-panel">
+      <video src="./video/BrandEx.mp4" muted loop playsinline></video>
+      <span>BRAND EXPERIENCE</span>
+    </div>
+
+    <div class="services-panel">
+      <video src="./video/Digital.mp4" muted loop playsinline></video>
+      <span>DIGITAL</span>
+    </div>
+
+    <div class="services-panel">
+      <video src="./video/product.mp4" muted loop playsinline></video>
+      <span>PRODUCT</span>
+    </div>
+  </div>
+</section>
+
+
+<!-- ================= SERVICES DETAIL SECTION ================= -->
+<section class="service-tabs" id="servicesSection">
+
+  <!-- TOP SERVICE LIST (CLICKABLE FROM HERO / OTHER SECTIONS) -->
+  <div class="service-cards">
+    <div class="service-card active" data-service="brand">Creative</div>
+    <div class="service-card" data-service="experience">Brand Experience</div>
+    <div class="service-card" data-service="social">Digital </div>
+    <div class="service-card" data-service="merch">Product</div>
+  </div>
+
+  <!-- CONTENT GRID -->
+  <div class="service-grid">
+
+    <!-- LEFT CONTENT -->
+    <div class="service-content">
+      <h2 id="serviceTitle">Creative</h2>
+
+      <div class="tabs">
+        <span class="tab active">Overview</span>
+        <!--<span class="tab">Services</span>-->
+      </div>
+
+      <p id="serviceText">
+        We craft distinct visual and verbal identities that make brands instantly recognisable.
+        From brand systems to campaigns, every element is built with intent and coherence.
+        Our work balances aesthetics with strategy, ensuring creativity drives real impact.
+        So your brand doesn’t just stand out, it stays remembered.
+      </p>
+
+      <div class="cta-buttons">
+        <a href="services.html" class="curve-btn outline">EXPLORE</a>
+        <a href="work.html" class="curve-btn outline">WORK</a>
+      </div>
+    </div>
+
+    <!-- RIGHT VIDEO -->
+    <div class="service-video-frame">
+      <video autoplay muted loop playsinline>
+        <source src="./video/Creative.mp4" type="video/mp4">
+      </video>
+    </div>
+
+  </div>
+</section>
+
+<!-- ================= WORK SHOWCASE ================= -->
+<section id="work" class="work-section">
+
+  <div class="work-header">
+    <h2>OUR WORK</h2>
+    <!--
+    <p>
+      Every project we take on is a partnership.
+      We work with ambitious startups, growing businesses, and established brands, helping them define who they are, sharpen what they say, 
+      and elevate how they show up in the world.  
+    </p>
+    -->
+  </div>
+
+  <!-- GRID -->
+  <div class="work-grid">
+
+    <!-- ITEM -->
+    <a href="#" class="work-card">
+      <div class="work-media" style="background-image:url('./image/p1.png')"></div>
+      <div class="work-overlay">
+        <h3>Luxury Brand Relaunch</h3>
+        <span>Brand Identity • Strategy</span>
+      </div>
+    </a>
+
+    <!-- ITEM -->
+    <a href="#" class="work-card">
+      <div class="work-media" style="background-image:url('./image/p2.png')"></div>
+      <div class="work-overlay">
+        <h3>Global Startup Identity</h3>
+        <span>Logo • Visual System</span>
+      </div>
+    </a>
+
+    <!-- ITEM -->
+    <a href="#" class="work-card">
+      <div class="work-media" style="background-image:url('./image/p3.png')"></div>
+      <div class="work-overlay">
+        <h3>Digital Motion Campaign</h3>
+        <span>Film • Social Campaign</span>
+      </div>
+    </a>
+
+    <!-- ITEM -->
+    <a href="#" class="work-card">
+      <div class="work-media" style="background-image:url(./image/p4.png)"></div>
+      <div class="work-overlay">
+        <h3>Experiential Pop-Up</h3>
+        <span>Live Brand Experience</span>
+      </div>
+    </a>
+
+
+  </div>
+
+  <!-- ================= WORK CTA ================= -->
+<div class="work-cta">
+
+  <h2>Take a closer look at our work</h2>
+
+  <a href="work.html" class="viewall-btn">VIEW ALL</a>
+
+</div>
+
+
+</section>
+
+
+
+
+<!-- ================= OUR CLIENTS ================= -->
+<section class="clients-section">
+
+  <h2 class="clients-title">OUR CLIENTS</h2>
+
+  <div class="clients-marquee">
+
+    <!-- ROW 1 → RIGHT -->
+    <div class="clients-track right">
+      <img src="./image/c1.png" class="client-logo" alt="Client" onclick="openLogo(this)">
+      <img src="./image/c2.png" class="client-logo" alt="Client" onclick="openLogo(this)">
+      <img src="./image/c3.png" class="client-logo" alt="Client" onclick="openLogo(this)">
+      <img src="./image/c4.png" class="client-logo" alt="Client" onclick="openLogo(this)">
+      <img src="./image/c5.png" class="client-logo" alt="Client" onclick="openLogo(this)">
+      <img src="./image/c6.png" class="client-logo" alt="Client" onclick="openLogo(this)">
+
+      <!-- DUPLICATE FOR LOOP -->
+      <img src="./image/c1.png" class="client-logo" alt="Client" onclick="openLogo(this)">
+      <img src="./image/c2.png" class="client-logo" alt="Client" onclick="openLogo(this)">
+      <img src="./image/c3.png" class="client-logo" alt="Client" onclick="openLogo(this)">
+      <img src="./image/c4.png" class="client-logo" alt="Client" onclick="openLogo(this)">
+      <img src="./image/c5.png" class="client-logo" alt="Client" onclick="openLogo(this)">
+      <img src="./image/c6.png" class="client-logo" alt="Client" onclick="openLogo(this)">
+    </div>
+
+    <!-- ROW 2 → LEFT -->
+    <div class="clients-track left">
+      <img src="./image/c7.png" class="client-logo" alt="Client" onclick="openLogo(this)">
+      <img src="./image/c8.png" class="client-logo" alt="Client" onclick="openLogo(this)">
+      <img src="./image/c9.png" class="client-logo" alt="Client" onclick="openLogo(this)">
+      <img src="./image/c10.png" class="client-logo" alt="Client" onclick="openLogo(this)">
+      <img src="./image/c11.png" class="client-logo" alt="Client" onclick="openLogo(this)">
+      <img src="./image/c12.png" class="client-logo" alt="Client" onclick="openLogo(this)">
+
+      <!-- DUPLICATE FOR LOOP -->
+      <img src="./image/c13.png" class="client-logo" alt="Client" onclick="openLogo(this)">
+      <img src="./image/c8.png" class="client-logo" alt="Client" onclick="openLogo(this)">
+      <img src="./image/c9.png" class="client-logo" alt="Client" onclick="openLogo(this)">
+      <img src="./image/c10.png" class="client-logo" alt="Client" onclick="openLogo(this)">
+      <img src="./image/c1.png" class="client-logo" alt="Client" onclick="openLogo(this)">
+      <img src="./image/c2.png" class="client-logo" alt="Client" onclick="openLogo(this)">
+    </div>
+    
+
+  </div>
+</section>
+
+
+<!--===============================-->
+<!--========== ABOUT US========= -->
+<!--==============================-->
+
+<!-- ABOUT -->
+<section class="about">
+  <div class="about-inner">
+
+    <div class="about-video">
+      <video id="aboutVideo" muted playsinline preload="metadata">
+        <source src="./video/showreel.mp4" type="video/mp4">
+      </video>
+    </div>
+
+    <div class="about-content">
+      <h2>OUR PHILOSOPHY</h2>
+
+      <p>
+        At Elegans, we believe brands are not created through marketing—they are built through clarity.
+We are brand architects for growth, helping businesses move from concept to category leadership with purpose, precision, and intent.
+We build brands before they are marketed.
+
+      </p>
+
+      <p>
+       We build brands. Others run marketing.
+      </p>
+
+      
+
+      <a href="aboutelegans.html" class="more-us">KNOW MORE ABOUT US</a>
+    </div>
+</div>
+</section>
+
+
+<!--============================================-->
+<!-- ============== MEET OUR TEAM ============== -->
+ <!--============================================-->
+<section class="team-section">
+
+  <h2 class="team-title">Meet Our DNA</h2>
+
+  <div class="team-stage" id="teamTrigger">
+
+    <!-- LEFT WAVE -->
+    <div class="team-wave left">
+
+      <div class="team-card">
+        <img src="./image/p1.jpg" class="team-img">
+        <h4>Ven Krishnamoorthy</h4>
+        <span>FOUNDER</span>
+      </div>
+
+      <div class="team-card">
+        <img src="./image/p2.jpg" class="team-img">
+        <h4>Gilbert santiagu</h4>
+        <span>CREATIVE HEAD</span>
+      </div>
+
+    </div>
+
+    <!-- CENTER VIDEO -->
+    <video class="team-video" autoplay muted loop playsinline>
+      <source src="./video/teamv1.mp4" type="video/mp4">
+    </video>
+
+    <!-- RIGHT WAVE -->
+    <div class="team-wave right">
+
+      <div class="team-card">
+        <img src="./image/p1.jpg" class="team-img">
+        <h4>Manu</h4>
+        <span>CONTENT DIRECTOR</span>
+      </div>
+
+      <div class="team-card">
+        <img src="./image/p2.jpg" class="team-img">
+        <h4>Ashok</h4>
+        <span>SENIOR VIDEO EDITOR</span>
+      </div>
+
+    </div>
+
+  </div>
+
+  <a class="team-link" href="culture.html">View our DNA</a>
+
+</section>
+
+
+
+
+
+<!-- ================= FOOTER ================= -->
+<!-- ================= FOOTER ================= -->
+<footer class="footer">
+
+  <div class="footer-inner">
+
+    <!-- Column 1 – Brand -->
+    <div class="footer-brand">
+      <img src="./image/logo_elegans_tm.png" alt="ELEGANS Creative Branding Studio Logo" class="footer-logo">
+      <p class="footer-desc">
+        Creative branding studio delivering brand strategy, 
+        visual identity, digital campaigns, and 
+        storytelling for global brands.
+
+      </p>
+    </div>
+
+    <!-- Column 2 – Contact -->
+    <div class="footer-contact">
+      <h3>Contact</h3>
+      <p>
+        <strong>Email</strong><br>
+        <a href="mailto:contact@elegansinc.com">contact@elegansinc.com</a>
+      </p>
+      <p>
+        <strong>Phone</strong><br>
+        <a href="tel:+911234567890">+91 91760 40552 </a>
+      </p>
+    </div>
+
+    <!-- Column 3 – Addresses -->
+    <!-- Column 3 – Locations -->
+<div class="footer-addresses">
+  <h3>Our Locations</h3>
+
+  <ul class="location-list">
+    <li data-city="Chennai, India"
+        data-address="Elegans Branding Pvt Ltd,
+Janaki Building, 20, B1,
+Sardar Patel Rd,
+next to Metro Shoes,
+Adyar, Chennai, Tamil Nadu - 600020">
+        India
+    </li>
+
+    <!--<li data-city="Dubai"
+        data-address="45 Design Avenue, Dubai">
+        Dubai
+    </li>-->
+
+    <li data-city="London, UK"
+        data-address="Elegans Branding Pvt Ltd, London, United Kingdom">
+        United Kingdom
+    </li>
+  </ul>
+</div>
+
+
+    <!-- Column 4 – Social -->
+    <div class="footer-social">
+      <h3>Follow Us</h3>
+      <div class="social-icons">
+        <a href="https://www.instagram.com/elegansinc/" target="_blank"  aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+        <a href="https://www.linkedin.com/company/elegansagency/" target="_blank" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+        <a href="https://www.facebook.com/elegansinc/" target="_blank" aria-label="FaceBook"><i class="fab fa-facebook"></i></a>
+        
+      </div>
+    </div>
+
+  </div>
+
+  <!-- Bottom bar -->
+  <div class="footer-bottom">
+    <p>© <span id="footerYear"></span> ELEGANS — All Rights Reserved</p>
+    <p>Brand Architecture | India • UK</p>
+  </div>
+ 
+</footer>
+
+<!-- LOCATION POPUP -->
+<div id="location-popup" class="location-popup">
+  <div class="location-box">
+    
+    <span id="popup-close">×</span>
+
+    <h3 id="popup-city"></h3>
+    <p id="popup-address"></p>
+
+  </div>
+</div>
+
+<!-- ============ BACK TO TOP ARROW ============ -->
+<div id="topBtn" class="top-arrow">
+    <i class="fa-solid fa-arrow-up"></i>
+</div>
+
+
+
+<script src="./js/script.js"></script>
+</body>
+</html>

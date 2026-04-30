@@ -1,0 +1,787 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Creative Branding Agency | Elegans</title>
+<meta name="description" content="Elegans is a creative branding agency offering premium brand identity, social media, and digital experiences. Build your brand with Elegans.">
+<meta name="keywords" content="Branding, Experience, Social Media, Merchandise, Premium Animation, 3D Effects">
+<meta name="author" content="Elegans Branding Agency">
+<!-- Open Graph Meta Tags -->
+<meta property="og:type" content="website">
+<meta property="og:title" content="Creative Branding Agency | Elegans">
+<meta property="og:description" content="Elegans is a creative branding agency delivering premium brand identity, digital experiences, and social media solutions.">
+<meta property="og:url" content="https://elegans.com/">
+<meta property="og:image" content="https://elegans.com/images/og-image.jpg">
+<meta property="og:site_name" content="Elegans">
+<meta property="og:locale" content="en_IN">
+<!-- Twitter Card -->
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="Creative Branding Agency | Elegans">
+<meta name="twitter:description" content="Premium branding, digital experiences, and social media solutions by Elegans.">
+<meta name="twitter:image" content="https://elegans.com/images/og-image.jpg">
+
+<link rel="icon" type="image/png" sizes="32x32" href="./image/favicon-32.png">
+<link rel="icon" type="image/png" sizes="16x16" href="./image/favicon-16.png">
+<link rel="apple-touch-icon" href="./image/apple-touch-icon.png">
+<link rel="canonical" href="https://elegans.com/">
+<link rel="stylesheet" href="./css/styles.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" integrity="sha512-..." crossorigin="anonymous" referrerpolicy="no-referrer" />
+<style>
+ 
+/* ================= CASE STUDY PAGE - ELEGANS DARK PREMIUM ================= */
+.case-study-page {
+  width: 100%;
+  background: #0a0a0a;
+  color: #ffffff;
+  overflow: hidden;
+}
+
+/* HERO */
+.case-hero {
+  position: relative;
+  width: 100%;
+  min-height: 100vh;
+  background: #000;
+}
+
+.case-hero-image {
+  width: 100%;
+  height: 100vh;
+}
+
+.case-hero-image img {
+  width: 100%;
+  height: 100%;
+  
+  object-fit: cover;
+  display: block;
+  
+}
+
+.case-hero-overlay {
+  position: absolute;
+  bottom: 8%;
+  left: 6%;
+  max-width: 760px;
+  color: #fff;
+  z-index: 2;
+}
+
+.case-label {
+  display: inline-block;
+  font-size: 12px;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  margin-bottom: 14px;
+  padding: 8px 14px;
+  border: 1px solid rgba(255, 204, 0, 0.35);
+  border-radius: 50px;
+  background: rgba(255, 204, 0, 0.08);
+  backdrop-filter: blur(6px);
+  color: #d7ac49;
+}
+
+.case-hero-overlay h1 {
+  font-size: clamp(2.4rem, 6vw, 5.5rem);
+  line-height: 1.05;
+  font-weight: 600;
+  margin-bottom: 18px;
+  color: #ffffff;
+}
+
+.case-subtitle {
+  font-size: 1.05rem;
+  line-height: 1.8;
+  max-width: 620px;
+  color: rgba(255, 255, 255, 0.82);
+}
+
+/* SECTION COMMON */
+.line-drawing-section,
+.case-details-section,
+.case-gallery-section,
+.case-results-section {
+  padding: 100px 6%;
+  background: #0a0a0a;
+}
+
+.mini-title {
+  font-size: 12px;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  color: #d7ac49;
+  margin-bottom: 14px;
+  font-weight: 600;
+}
+
+.section-heading {
+  max-width: 760px;
+  margin-bottom: 50px;
+}
+
+.section-heading h2,
+.line-drawing-text h2,
+.results-left h2 {
+  font-size: clamp(2rem, 4vw, 4rem);
+  line-height: 1.1;
+  font-weight: 600;
+  margin-bottom: 18px;
+  color: #ffffff;
+}
+
+.section-heading p,
+.line-drawing-text p,
+.results-left p {
+  font-size: 1rem;
+  line-height: 1.9;
+  color: rgba(255, 255, 255, 0.72);
+}
+
+/* LINE DRAWING SECTION */
+.line-drawing-wrap {
+  display: grid;
+  grid-template-columns: 1fr 1.2fr;
+  gap: 50px;
+  align-items: center;
+}
+
+.line-drawing-text {
+  max-width: 500px;
+}
+
+.line-drawing-image {
+  border-radius: 28px;
+  overflow: hidden;
+  border: 1px solid rgba(255, 204, 0, 0.08);
+  box-shadow: 0 20px 60px rgba(0, 0, 0, 0.45);
+}
+
+.line-drawing-image img {
+  width: 100%;
+  display: block;
+  object-fit: cover;
+}
+
+/* CASE DETAILS TABS */
+.case-details-container {
+  display: grid;
+  grid-template-columns: 320px 1fr;
+  gap: 40px;
+  align-items: start;
+}
+
+.case-tabs-nav {
+  position: sticky;
+  top: 120px;
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+  padding: 24px;
+  background: #111111;
+  border: 1px solid rgba(255, 204, 0, 0.12);
+  border-radius: 24px;
+  backdrop-filter: blur(10px);
+}
+
+.case-tab-btn {
+  width: 100%;
+  text-align: left;
+  padding: 18px 22px;
+  border: 1px solid transparent;
+  background: transparent;
+  border-radius: 16px;
+  font-size: 1rem;
+  font-weight: 500;
+  color: #ffffff;
+  cursor: pointer;
+  transition: all 0.35s ease;
+}
+
+.case-tab-btn:hover {
+  background: rgba(255, 204, 0, 0.08);
+  color: #d7ac49;
+}
+
+.case-tab-btn.active {
+  background: #d7ac49;
+  color: #000000;
+  border-color: #d7ac49;
+  box-shadow: 0 12px 30px rgba(255, 204, 0, 0.16);
+  font-weight: 600;
+}
+
+.case-tabs-content {
+  position: relative;
+  background: #111111;
+  border: 1px solid rgba(255, 204, 0, 0.08);
+  border-radius: 28px;
+  padding: 50px;
+  box-shadow: 0 20px 60px rgba(0, 0, 0, 0.35);
+  min-height: 400px;
+}
+
+.case-tab-panel {
+  display: none;
+  animation: fadeInTab 0.4s ease;
+}
+
+.case-tab-panel.active {
+  display: block;
+}
+
+.tab-label {
+  font-size: 12px;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  color: #d7ac49;
+  margin-bottom: 14px;
+  font-weight: 600;
+}
+
+.case-tab-panel h3 {
+  font-size: clamp(1.8rem, 3vw, 3rem);
+  line-height: 1.2;
+  font-weight: 600;
+  margin-bottom: 20px;
+  color: #ffffff;
+}
+
+.case-tab-panel p {
+  font-size: 1rem;
+  line-height: 1.9;
+  color: rgba(255, 255, 255, 0.72);
+  margin-bottom: 18px;
+}
+
+.services-list {
+  list-style: none;
+  padding: 0;
+  margin: 10px 0 0;
+}
+
+.services-list li {
+  position: relative;
+  padding-left: 24px;
+  margin-bottom: 14px;
+  color: rgba(255, 255, 255, 0.78);
+  font-size: 1rem;
+  line-height: 1.8;
+}
+
+.services-list li::before {
+  content: "•";
+  position: absolute;
+  left: 0;
+  top: 0;
+  color: #d7ac49;
+  font-size: 1.2rem;
+}
+
+/* GALLERY */
+.case-gallery-grid {
+  display: grid;
+  grid-template-columns: repeat(12, 1fr);
+  gap: 20px;
+}
+
+.gallery-card {
+  grid-column: span 4;
+  border-radius: 24px;
+  overflow: hidden;
+  background: #111111;
+  border: 1px solid rgba(255, 204, 0, 0.06);
+  box-shadow: 0 16px 40px rgba(0, 0, 0, 0.35);
+}
+
+.gallery-card.large {
+  grid-column: span 8;
+}
+
+.gallery-card.wide {
+  grid-column: span 8;
+}
+
+.gallery-card img {
+  width: 100%;
+  height: 100%;
+  min-height: 320px;
+  object-fit: cover;
+  display: block;
+  transition: transform 0.5s ease, filter 0.5s ease;
+  filter: brightness(92%);
+}
+
+.gallery-card:hover img {
+  transform: scale(1.04);
+  filter: brightness(100%);
+}
+
+/* RESULTS */
+.case-results-wrap {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 40px;
+  align-items: start;
+}
+
+.results-right {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 20px;
+}
+
+.result-box {
+  background: #111111;
+  border-radius: 24px;
+  padding: 30px;
+  box-shadow: 0 14px 40px rgba(0, 0, 0, 0.35);
+  border: 1px solid rgba(255, 204, 0, 0.08);
+}
+
+.result-box h3 {
+  font-size: 2rem;
+  margin-bottom: 10px;
+  color: #d7ac49;
+  font-weight: 700;
+}
+
+.result-box p {
+  font-size: 1rem;
+  color: rgba(255, 255, 255, 0.75);
+  line-height: 1.8;
+}
+
+/* ANIMATION */
+@keyframes fadeInTab {
+  from {
+    opacity: 0;
+    transform: translateY(8px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* RESPONSIVE */
+@media (max-width: 1100px) {
+  .line-drawing-wrap,
+  .case-details-container,
+  .case-results-wrap {
+    grid-template-columns: 1fr;
+  }
+
+  .case-tabs-nav {
+    position: relative;
+    top: auto;
+    flex-direction: row;
+    flex-wrap: wrap;
+    padding: 16px;
+  }
+
+  .case-tab-btn {
+    width: auto;
+    flex: 1 1 calc(50% - 10px);
+    min-width: 140px;
+  }
+
+  .case-tabs-content {
+    padding: 36px;
+  }
+}
+
+@media (max-width: 768px) {
+  .case-hero {
+    min-height: 85vh;
+  }
+
+  .case-hero-image {
+    height: 85vh;
+  }
+
+  .case-hero-overlay {
+    left: 5%;
+    right: 5%;
+    bottom: 6%;
+    max-width: 100%;
+  }
+
+  .line-drawing-section,
+  .case-details-section,
+  .case-gallery-section,
+  .case-results-section {
+    padding: 70px 5%;
+  }
+
+  .case-tabs-content {
+    padding: 28px 22px;
+    border-radius: 20px;
+  }
+
+  .case-tabs-nav {
+    border-radius: 20px;
+  }
+
+  .case-gallery-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .gallery-card,
+  .gallery-card.large,
+  .gallery-card.wide {
+    grid-column: span 1;
+  }
+
+  .gallery-card img {
+    min-height: 240px;
+  }
+
+  .case-tab-btn {
+    flex: 1 1 100%;
+  }
+}
+
+@media (max-width: 480px) {
+  .case-hero-overlay h1 {
+    font-size: 2rem;
+  }
+
+  .case-subtitle {
+    font-size: 0.95rem;
+    line-height: 1.7;
+  }
+
+  .section-heading h2,
+  .line-drawing-text h2,
+  .results-left h2 {
+    font-size: 1.8rem;
+  }
+
+  .case-tab-panel h3 {
+    font-size: 1.5rem;
+  }
+}
+</style>
+</head>
+
+<body>
+ 
+<!-- PRELOADER --.>
+<div id="preloader">
+    <img src="image/Elegans Branding_logo.svg" class="logos" alt="Company Logo Loading...">
+
+    <div class="loading-wrapper">
+        <div class="loading-outline">LOADING...</div>
+        <div class="loading-fill">LOADING...</div>
+    </div>
+</div>-->
+
+
+<!-- HEADER -->
+<header>
+  <div class="logo"><a href="index.html"><img src="./image/Elegans_logo.png" alt="Elegans_Logo"></a></div>
+  <div class="header-actions">
+    <a href="contact.html" class="btn-talk">Let’s Talk</a>
+    <button class="menu-btn" id="menuBtn">MENU</button>
+  </div>
+  <div class="menu-popup" id="menuPopup">
+    <a href="index.html">Home</a>
+    <a href="aboutelegans.html">About Us</a>
+    <a href="services.html">Services</a>
+    <a href="work.html">Work</a>
+    <a href="culture.html">Culture</a>
+  </div>
+</header>
+
+
+<!-- ================= CASE STUDY PAGE CONTENT START ================= -->
+<main class="case-study-page">
+
+  <!-- HERO SECTION -->
+  <section class="case-hero">
+    <div class="case-hero-image">
+      <img src="./image/oh podu logo.png" alt="Project Case Study Hero Image">
+    </div>
+
+    <div class="case-hero-overlay">
+      
+      <h1>Oh Podu!</h1>
+      <h4>FMCG · Snacks & Packaged Foods | South India</h1>
+      <p class="case-subtitle">
+        A regional expression—rooted in sound, culture, and everyday emotion.
+      </p>
+    </div>
+  </section>
+
+  <!-- LINE DRAWING / SKETCH SECTION -->
+  <section class="line-drawing-section">
+    <div class="line-drawing-wrap">
+      <div class="line-drawing-text">
+        <p class="mini-title">The Creative Process</p>
+        <h2>From Concept Sketch to Brand Reality</h2>
+        <p>
+          Every impactful brand begins with a thought, a line, and a direction.
+          This stage reflects our visual exploration and the foundation of the final identity.
+        </p>
+      </div>
+
+      <div class="line-drawing-image">
+        <img src="./image/line-drawing.jpg" alt="Line Drawing Concept">
+      </div>
+    </div>
+  </section>
+
+  <!-- CASE STUDY DETAILS SECTION -->
+  <section class="case-details-section">
+    <div class="case-details-container">
+
+      <!-- LEFT SIDE TAB NAV -->
+      <div class="case-tabs-nav">
+        <button class="case-tab-btn active" data-tab="question">The Question</button>
+        <button class="case-tab-btn" data-tab="insight">The Insight</button>
+        <button class="case-tab-btn" data-tab="fold">The Folding</button>
+        <button class="case-tab-btn" data-tab="form">The Form</button>
+        <button class="case-tab-btn" data-tab="unfold">The Unfolding</button>
+      </div>
+
+      <!-- RIGHT SIDE CONTENT -->
+      <div class="case-tabs-content">
+
+        <!-- QUESTION -->
+        <div class="case-tab-panel active" id="question">
+          <p class="tab-label">The Question</p>
+          <h3>The Question</h3>
+          <p>
+            How do you create a snack brand that feels instantly familiar—without leaning on nostalgia?
+          </p>
+          <p>
+            In a category crowded with memory-led storytelling, Oh Podu! needed a voice that felt
+current, culturally rooted, and scalable across regions—without losing its local soul.
+          </p>
+        </div>
+
+        <!-- Insight -->
+        <div class="case-tab-panel" id="insight">
+          <p class="tab-label">The Insight</p>
+          <h3>The Insight</h3>
+          <p>
+            Culture is not static.
+It speaks in tone, rhythm, and humour.
+          </p>
+          <p>
+            Across South India, expression lives in language, sound, and comic exaggeration. A brand
+that listens closely can feel native everywhere—without being generic anywhere.
+          </p>
+        </div>
+
+        <!-- FOLD -->
+        <div class="case-tab-panel" id="fold">
+          <p class="tab-label">The Folding</p>
+          <h3>The Folding </h3>
+          <p>
+            We chose expression over sentimentality.
+Character over convention.
+          </p>
+          <p>
+            The strategy was to build a flexible identity system—one that could adapt to regional nuance
+while remaining unmistakably singular. A brand designed to entertain, not explain.
+          </p>
+        </div>
+
+        <!-- FORM -->
+        <div class="case-tab-panel" id="form">
+          <p class="tab-label">The Form</p>
+          <h3>The Form</h3>
+          <p>
+            The brand took shape through a bold, cohesive system.<br>
+A distinctive logo anchored the identity.
+Packaging became the primary stage for storytelling.
+Mascots emerged as cultural carriers—each reflecting regional personality, humour, and tone.
+          </p>
+          <p>
+            A Brand Fun Book ensured consistency without restriction—guiding play, not limiting it.
+          </p>
+        </div>
+
+        <!-- UNFOLD -->
+        <div class="case-tab-panel" id="unfold">
+          <p class="tab-label">The Unfolding</p>
+          <h3>The Unfolding</h3>
+          <p>
+            Across four South Indian states, thirteen packaging variants came to life—each supported by
+region-specific mascots.<br>
+Four distinct characters allowed the brand to speak many dialects, while remaining
+recognisably Oh Podu! in spirit and form.
+
+          </p>
+          <p>
+            
+The result was a brand that could travel—without losing its voice.
+          </p>
+        </div>
+
+
+      </div>
+    </div>
+  </section>
+
+  <!-- CLIENT DELIVERABLES / GALLERY -->
+  <section class="case-gallery-section">
+    <div class="section-heading">
+      <p class="mini-title">What We Created</p>
+      <h2>Deliverables for the Client</h2>
+      <p>
+        A curated showcase of selected outputs developed for the brand across digital,
+        visual, and communication touchpoints.
+      </p>
+    </div>
+
+    <div class="case-gallery-grid">
+      <div class="gallery-card large">
+        <img src="./image/case-work-1.jpg" alt="Branding Design Work 1">
+      </div>
+
+      <div class="gallery-card">
+        <img src="./image/case-work-2.jpg" alt="Branding Design Work 2">
+      </div>
+
+      <div class="gallery-card">
+        <img src="./image/case-work-3.jpg" alt="Branding Design Work 3">
+      </div>
+
+      <div class="gallery-card">
+        <img src="./image/case-work-4.jpg" alt="Branding Design Work 4">
+      </div>
+
+      <div class="gallery-card wide">
+        <img src="./image/case-work-5.jpg" alt="Branding Design Work 5">
+      </div>
+    </div>
+  </section>
+
+  
+
+</main>
+<!-- ================= CASE STUDY PAGE CONTENT END ================= -->
+
+<!-- ================= FOOTER ================= -->
+<!-- ================= FOOTER ================= -->
+<footer class="footer">
+
+  <div class="footer-inner">
+
+    <!-- Column 1 – Brand -->
+    <div class="footer-brand">
+      <img src="./image/logo_elegans_tm.png" alt="ELEGANS Creative Branding Studio Logo" class="footer-logo">
+      <p class="footer-desc">
+        Creative branding studio delivering brand strategy, 
+        visual identity, digital campaigns, and 
+        storytelling for global brands.
+
+      </p>
+    </div>
+
+    <!-- Column 2 – Contact -->
+    <div class="footer-contact">
+      <h3>Contact</h3>
+      <p>
+        <strong>Email</strong><br>
+        <a href="mailto:contact@elegansinc.com">contact@elegansinc.com</a>
+      </p>
+      <p>
+        <strong>Phone</strong><br>
+        <a href="tel:+919176040552">+91 91760 40552 </a>
+      </p>
+    </div>
+
+    <!-- Column 3 – Addresses -->
+    <!-- Column 3 – Locations -->
+<div class="footer-addresses">
+  <h3>Our Locations</h3>
+
+  <ul class="location-list">
+    <li data-city="Chennai, India"
+        data-address="Janaki Building, B1, 20,Sardar Patel Rd, next to GRT JEWELLERS, Adyar, Chennai, Tamil Nadu 600020">
+        India
+    </li>
+
+    <!--<li data-city="Dubai"
+        data-address="45 Design Avenue, Dubai">
+        Dubai
+    </li>-->
+
+    <li data-city="London, UK"
+        data-address="78 Branding Road, London, United Kingdom">
+        United Kingdom
+    </li>
+  </ul>
+</div>
+
+
+    <!-- Column 4 – Social -->
+    <div class="footer-social">
+      <h3>Follow Us</h3>
+      <div class="social-icons">
+        <a href="https://www.instagram.com/elegansinc/" target="_blank"  aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+        <a href="https://www.linkedin.com/company/elegansagency/" target="_blank" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+        <a href="https://www.facebook.com/elegansinc/" target="_blank" aria-label="FaceBook"><i class="fab fa-facebook"></i></a>
+        
+      </div>
+    </div>
+
+  </div>
+
+  <!-- Bottom bar -->
+  <div class="footer-bottom">
+    <p>© <span id="footerYear"></span> ELEGANS — All Rights Reserved</p>
+    <p>Creative Branding Studio | India • UK</p>
+  </div>
+ 
+</footer>
+
+<!-- LOCATION POPUP -->
+<div id="location-popup" class="location-popup">
+  <div class="location-box">
+    
+    <span id="popup-close">×</span>
+
+    <h3 id="popup-city"></h3>
+    <p id="popup-address"></p>
+
+  </div>
+</div>
+
+<!-- ============ BACK TO TOP ARROW ============ -->
+<div id="topBtn" class="top-arrow">
+    <i class="fa-solid fa-arrow-up"></i>
+</div>
+<script src="./js/script.js"></script>
+<script>
+  /* ================= CASE STUDY TABS ================= */
+const caseTabButtons = document.querySelectorAll('.case-tab-btn');
+const caseTabPanels = document.querySelectorAll('.case-tab-panel');
+
+caseTabButtons.forEach(button => {
+  button.addEventListener('click', () => {
+    const targetTab = button.getAttribute('data-tab');
+
+    // Remove active from all buttons
+    caseTabButtons.forEach(btn => btn.classList.remove('active'));
+
+    // Remove active from all panels
+    caseTabPanels.forEach(panel => panel.classList.remove('active'));
+
+    // Add active to clicked button
+    button.classList.add('active');
+
+    // Show target panel
+    const targetPanel = document.getElementById(targetTab);
+    if (targetPanel) {
+      targetPanel.classList.add('active');
+    }
+  });
+});
+</script>
+</body>
+</html>

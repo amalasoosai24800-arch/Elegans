@@ -1,0 +1,733 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Elegans Branding || Creative Branding work</title>
+<meta name="description" content="Premium branding, experience, social, and merchandise services with cinematic scroll and 3D effects.">
+<meta name="keywords" content="Branding, Experience, Social Media, Merchandise, Premium Animation, 3D Effects">
+<meta name="author" content="Elegans Branding Agency">
+<!-- Open Graph Meta Tags -->
+<meta property="og:type" content="website">
+<meta property="og:title" content="Creative Branding Agency work | Elegans">
+<meta property="og:description" content="Elegans is a creative branding agency delivering premium brand identity, digital experiences, and social media solutions.">
+<meta property="og:url" content="https://elegans.com/work/">
+<meta property="og:image" content="https://elegans.com/images/og-image.jpg">
+<meta property="og:site_name" content="Elegans">
+<meta property="og:locale" content="en_IN">
+<!-- Twitter Card -->
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="Creative Branding Agency | Elegans">
+<meta name="twitter:description" content="Premium branding, digital experiences, and social media solutions by Elegans.">
+<meta name="twitter:image" content="https://elegans.com/images/og-image.jpg">
+
+<link rel="icon" type="image/png" sizes="32x32" href="./image/favicon-32.png">
+<link rel="icon" type="image/png" sizes="16x16" href="./image/favicon-16.png">
+<link rel="apple-touch-icon" href="./image/apple-touch-icon.png">
+
+<link rel="canonical" href="https://elegans.com/work/">
+<link rel="stylesheet" href="./css/styles.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+
+
+<style>
+  /* General */
+  body, html { margin:0; padding:0; font-family: Arial, sans-serif; scroll-behavior: smooth; }
+
+  .work-hero_section{
+min-height:100vh;
+display:flex;
+align-items:center;
+background:#050505;
+color:#fff;
+padding:100px 8%;
+font-family:Inter, sans-serif;
+}
+
+/* GRID */
+.work-hero_container{
+display:grid;
+grid-template-columns:1.1fr 0.9fr;
+gap:60px;
+align-items:center;
+width:100%;
+}
+
+/* LEFT */
+.work-kicker{
+color:#ffdc84;
+letter-spacing:1px;
+font-size:36px;
+font-weight: 700;
+text-transform:uppercase;
+margin-bottom:18px;
+}
+
+.work-hero_content h1{
+font-size:56px;
+line-height:1.15;
+margin:0 0 20px;
+}
+
+.work-hero_content p{
+font-size:18px;
+line-height:1.9;
+color:#cfcfcf;
+max-width:520px;
+}
+
+/* IMAGE FRAME */
+.image-frame{
+position:relative;
+width:420px;
+height:520px;
+border-radius:26px;
+overflow:hidden;
+background:linear-gradient(145deg, rgba(255,255,255,0.05), rgba(255,255,255,0.02));
+
+box-shadow:0 40px 100px rgba(0,0,0,0.65);
+}
+
+/* IMAGE */
+.image-frame img{
+width:100%;
+height:100%;
+object-fit:cover;
+transform:scale(1.05);
+transition:0.6s ease;
+}
+
+.image-frame:hover img{
+transform:scale(1.12);
+}
+
+
+
+/* RESPONSIVE */
+@media(max-width:900px){
+
+.work-hero_container{
+grid-template-columns:1fr;
+text-align:center;
+}
+
+.work-hero_content p{
+margin:auto;
+}
+
+.image-frame{
+width:320px;
+height:420px;
+margin:auto;
+}
+
+.work-hero_content h1{
+font-size:36px;
+}
+
+}
+  /* ==========================
+ PREMIUM SHOWCASE CSS
+========================== */
+
+body{
+background:#050505;
+color:#fff;
+font-family:Inter,sans-serif;
+}
+
+/* COMMON */
+img{
+max-width:100%;
+display:block;
+}
+
+section{
+padding:70px 6%;
+}
+
+/* ==========================
+ FULL WIDTH SECTION
+========================== */
+
+.showcase-wide{
+display:grid;
+grid-template-columns:1.2fr .8fr;
+gap:32px;
+align-items:center;
+}
+
+.showcase-media{
+border-radius:24px;
+overflow:hidden;
+background:#111;
+}
+
+.showcase-media img{
+width:100%;
+height:auto;              /* FIX CUTTING */
+aspect-ratio:16/9;
+object-fit:contain;       /* FULL IMAGE SHOW */
+transition:.5s ease;
+}
+
+.showcase-wide:hover img{
+transform:scale(1.03);
+}
+
+.showcase-content{
+padding:10px;
+}
+
+.showcase-tag{
+font-size:12px;
+letter-spacing:4px;
+text-transform:uppercase;
+color:#ffdc84;
+display:block;
+margin-bottom:16px;
+}
+
+.showcase-content h2{
+font-size:44px;
+margin:0 0 14px;
+}
+
+.showcase-content p{
+color:#c8c8c8;
+line-height:1.8;
+margin-bottom:22px;
+}
+
+/* ==========================
+ GRID
+========================== */
+
+.showcase-grid{
+display:grid;
+grid-template-columns:1fr 1fr;
+gap:28px;
+}
+
+.showcase-card{
+background:rgba(255,255,255,.02);
+border:1px solid rgba(255,255,255,.06);
+border-radius:24px;
+overflow:hidden;
+transition:.35s ease;
+}
+
+.showcase-card:hover{
+transform:translateY(-6px);
+border-color:rgba(255,220,132,.2);
+}
+
+.card-media{
+background:#111;
+}
+
+.card-media img{
+width:100%;
+height:auto;             /* FIX CUTTING */
+aspect-ratio:4/3;
+object-fit:contain;      /* FULL IMAGE SHOW */
+transition:.5s ease;
+}
+
+.showcase-card:hover img{
+transform:scale(1.03);
+}
+
+.card-content{
+padding:24px;
+}
+
+.card-content h3{
+font-size:30px;
+margin:10px 0;
+}
+
+.card-content p{
+color:#c8c8c8;
+line-height:1.8;
+margin-bottom:20px;
+}
+
+/* BUTTON */
+.cta-btn{
+display:inline-block;
+padding:12px 22px;
+border-radius:40px;
+text-decoration:none;
+color:#050505;
+background:#ffdc84;
+font-size:14px;
+font-weight:600;
+transition:.3s ease;
+}
+
+.cta-btn:hover{
+transform:translateY(-2px);
+}
+
+/* ==========================
+ RESPONSIVE
+========================== */
+
+@media(max-width:980px){
+
+.showcase-wide{
+grid-template-columns:1fr;
+}
+
+.showcase-content{
+text-align:center;
+}
+
+.showcase-grid{
+grid-template-columns:1fr;
+}
+
+.showcase-content h2{
+font-size:36px;
+}
+
+.card-content h3{
+font-size:26px;
+}
+
+}
+
+@media(max-width:600px){
+
+section{
+padding:50px 20px;
+}
+
+.showcase-content h2{
+font-size:30px;
+}
+
+}
+
+/* CTA Button */
+.cta-btn {
+  display: inline-block;
+  margin-top: 30px; /* space below paragraph */
+  padding: 12px 30px;
+  background: #000; /* button color */
+  color: #fff;
+  text-decoration: none;
+  border-radius: 50px; /* curved edges */
+  font-size: 1rem;
+  font-weight: bold;
+  transition: all 0.3s ease;
+  border:1px solid #d7ac47;
+}
+
+.cta-btn:hover {
+  background: #d7ac47; /* hover color */
+  transform: translateY(-3px);
+}
+
+
+/* =========================
+   CTA – PREMIUM BUTTON
+========================= */
+.philo-action-wrap{
+  margin-top:40px;
+  margin-bottom: 30px;
+  display:flex;
+  justify-content:center;
+}
+
+.philo_action{
+  position:relative;
+  padding:16px 46px;
+  border-radius:999px;
+  border:1px solid rgba(215,172,71,.6);
+  text-transform:uppercase;
+  letter-spacing:.1em;
+  font-size:14px;
+  font-weight:700;
+  color:#d9ac47;
+  text-decoration:none;
+  overflow:hidden;
+  transition:all .6s cubic-bezier(.16,1,.3,1);
+}
+
+.philo_action::before{
+  content:"";
+  position:absolute;
+  inset:0;
+  background:linear-gradient(120deg,transparent,rgba(215,172,71,.4),transparent);
+  transform:translateX(-120%);
+  transition:transform .8s cubic-bezier(.16,1,.3,1);
+}
+
+.philo_action:hover{
+  background:#d7ac47;
+  color:#111;
+  box-shadow:0 25px 60px rgba(215,172,71,.4);
+}
+
+.philo_action:hover::before{
+  transform:translateX(120%);
+}
+
+.philo_action:focus-visible{
+  outline:2px solid #d7ac47;
+  outline-offset:6px;
+}
+
+</style>
+</head>
+
+<body>
+ 
+<!-- PRELOADER -->
+<div id="preloader">
+    <img src="image/Elegans Branding_logo.svg" class="logos" alt="Company Logo">
+
+    <div class="loading-wrapper">
+        <div class="loading-outline">LOADING...</div>
+        <div class="loading-fill">LOADING...</div>
+    </div>
+</div>
+
+<!-- HEADER -->
+<header>
+  <div class="logo"><a href="index.html"><img src="./image/Elegans_logo.png" alt="Logo"></a></div>
+  <div class="header-actions">
+    <a href="contact.html" class="btn-talk">Let’s Talk</a>
+    <button class="menu-btn" id="menuBtn">MENU</button>
+  </div>
+  <div class="menu-popup" id="menuPopup">
+    <a href="index.html">Home</a>
+    <a href="aboutelegans.html">Our Philosophy</a>
+
+    <a href="services.html">Services</a>
+    <a href="work.html">Our Work</a>
+    <a href="culture.html">Our DNA</a>
+  </div>
+</header>
+
+<!-- HERO SECTION -->
+<section class="work-hero_section">
+
+  <div class="work-hero_container">
+
+    <!-- LEFT CONTENT -->
+    <div class="work-hero_content">
+
+      <div class="work-kicker">OUR WORK</div>
+
+      <h1>
+       Every project we take on is a partnership.
+      </h1>
+
+      <p>
+        We work with ambitious startups, growing businesses, and established brands, helping them define who they are, sharpen what they say, 
+        and elevate how they show up in the world.
+      </p>
+
+    </div>
+
+    <!-- RIGHT IMAGE -->
+    <div class="work-hero_media">
+
+      <div class="image-frame">
+
+        <img src="./image/brush man.png" alt="Elegans creative">
+
+        
+
+      </div>
+
+    </div>
+
+  </div>
+
+</section>
+
+<!-- FULL WIDTH IMAGE SECTION -->
+ <!-- ===============================
+ PREMIUM WORK SHOWCASE GRID
+ Faster loading + no image cut
+================================ -->
+
+<!-- FULL FEATURE -->
+<section class="showcase-wide">
+
+  <a href="p1casestudy.html" class="showcase-media">
+    <img 
+      src="./image/Automobile1.jpg"
+      alt="Automobile Project"
+      loading="lazy"
+      decoding="async"
+      width="1600"
+      height="900">
+  </a>
+
+  <div class="showcase-content">
+    <span class="showcase-tag">Industry</span>
+    <h2>Automobiles Industry</h2>
+    <p>
+      Premium visual storytelling and branding crafted for performance-driven
+      automotive experiences.
+    </p>
+    <a href="Automobiles.html" class="cta-btn">View Images</a>
+  </div>
+
+</section>
+
+
+<!-- TWO COLUMN -->
+<section class="showcase-grid">
+
+  <!-- FOOD -->
+  <article class="showcase-card">
+
+    <a href="food.html" class="card-media">
+      <img 
+        src="./image/food1.jpg"
+        alt="Food Project"
+        loading="lazy"
+        decoding="async"
+        width="900"
+        height="700">
+    </a>
+
+    <div class="card-content">
+      <span class="showcase-tag">Category</span>
+      <h3>Food</h3>
+      <p>Creative product visuals crafted to increase appetite and engagement.</p>
+      <a href="food.html" class="cta-btn">View Images</a>
+    </div>
+
+  </article>
+
+  <!-- INDUSTRIAL -->
+  <article class="showcase-card">
+
+    <a href="industrial.html" class="card-media">
+      <img 
+        src="./image/indstrial1.jpg"
+        alt="Industrial Project"
+        loading="lazy"
+        decoding="async"
+        width="900"
+        height="700">
+    </a>
+
+    <div class="card-content">
+      <span class="showcase-tag">Category</span>
+      <h3>Industrial</h3>
+      <p>Precision-led branding visuals built for strong industrial identity.</p>
+      <a href="industrial.html" class="cta-btn">View Images</a>
+    </div>
+
+  </article>
+
+</section>
+
+
+<!-- FULL FEATURE -->
+<section class="showcase-wide">
+
+  <a href="interior.html" class="showcase-media">
+    <img 
+      src="./image/interior1.jpg"
+      alt="Interior Project"
+      loading="lazy"
+      decoding="async"
+      width="1600"
+      height="900">
+  </a>
+
+  <div class="showcase-content">
+    <span class="showcase-tag">Space</span>
+    <h2>Interior</h2>
+    <p>
+      Elegant brand environments and premium interior visual communication.
+    </p>
+    <a href="interior.html" class="cta-btn">View Images</a>
+  </div>
+
+</section>
+
+
+<!-- TWO COLUMN -->
+<section class="showcase-grid">
+
+  <!-- PRODUCT FOOD -->
+  <article class="showcase-card">
+
+    <a href="productfood.html" class="card-media">
+      <img 
+        src="./image/product food2.jpg"
+        alt="Product Food"
+        loading="lazy"
+        decoding="async"
+        width="900"
+        height="700">
+    </a>
+
+    <div class="card-content">
+      <span class="showcase-tag">Category</span>
+      <h3>Product</h3>
+      <p>Modern packaging visuals and premium edible product storytelling.</p>
+      <a href="productfood.html" class="cta-btn">View Images</a>
+    </div>
+
+  </article>
+
+  <!-- TVC -->
+  <article class="showcase-card">
+
+    <a href="tvc.html" class="card-media">
+      <img 
+        src="./image/tvc1.jpg"
+        alt="TVC Project"
+        loading="lazy"
+        decoding="async"
+        width="900"
+        height="700">
+    </a>
+
+    <div class="card-content">
+      <span class="showcase-tag">Media</span>
+      <h3>TVC</h3>
+      <p>High-impact campaign visuals designed for cinematic communication.</p>
+      <a href="tvc.html" class="cta-btn">View Images</a>
+    </div>
+
+  </article>
+
+</section>
+
+
+
+<section>
+  <div class="philo-action-wrap">
+      <a href="philosophy.html" class="philo_action">View our Services</a>
+    </div>
+</section>
+
+<!-- ================= FOOTER ================= -->
+<footer class="footer">
+
+  <div class="footer-inner">
+
+    <!-- Column 1 – Brand -->
+    <div class="footer-brand">
+      <img src="./image/logo_elegans_tm.png" alt="ELEGANS Creative Branding Studio Logo" class="footer-logo">
+      <p class="footer-desc">
+        Creative branding studio delivering brand strategy, 
+        visual identity, digital campaigns, and 
+        storytelling for global brands.
+
+      </p>
+    </div>
+
+    <!-- Column 2 – Contact -->
+    <div class="footer-contact">
+      <h3>Contact</h3>
+      <p>
+        <strong>Email</strong><br>
+        <a href="mailto:contact@elegansinc.com">contact@elegansinc.com</a>
+      </p>
+      <p>
+        <strong>Phone</strong><br>
+        <a href="tel:+919176040552">+91 91760 40552</a>
+      </p>
+    </div>
+
+    <!-- Column 3 – Addresses -->
+    <!-- Column 3 – Locations -->
+<div class="footer-addresses">
+  <h3>Our Locations</h3>
+
+  <ul class="location-list">
+    <li data-city="Chennai, India"
+        data-address="B1, Janaki Building, 20,Sardar Patel Rd, next to GRT JEWELLERS, Adyar, Chennai, Tamil Nadu 600020">
+        India
+    </li>
+
+    <!--<li data-city="Singapore"
+        data-address="45 Design Avenue, Singapore">
+        Dubai
+    </li>-->
+
+    <li data-city="London, UK"
+        data-address="124 City Road
+London EC1V 2NX, United Kingdom">
+        United Kingdom
+    </li>
+  </ul>
+</div>
+
+
+    <!-- Column 4 – Social -->
+    <div class="footer-social">
+      <h3>Follow Us</h3>
+      <div class="social-icons">
+        <a href="https://www.instagram.com/elegansinc/" target="_blank"  aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+        <a href="https://www.linkedin.com/company/elegansagency/" target="_blank" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+        <a href="https://www.facebook.com/elegansinc/" target="_blank" aria-label="FaceBook"><i class="fab fa-facebook"></i></a>
+        
+      </div>
+    </div>
+
+  </div>
+
+  <!-- Bottom bar -->
+  <div class="footer-bottom">
+    <p>© <span id="footerYear"></span> ELEGANS — All Rights Reserved</p>
+    <p>Creative Branding Studio | India • UK</p>
+  </div>
+
+</footer>
+
+<!-- LOCATION POPUP -->
+<div id="location-popup" class="location-popup">
+  <div class="location-box">
+    
+    <span id="popup-close">×</span>
+
+    <h3 id="popup-city"></h3>
+    <p id="popup-address"></p>
+
+  </div>
+</div>
+
+<script src="js/script.js"></script>
+<!-- GSAP ANIMATIONS -->
+<script>
+    window.addEventListener('load', () => {
+  document.getElementById('preloader').style.display = 'none';
+});
+
+
+  // Animate images with scroll
+  gsap.utils.toArray('img').forEach((img) => {
+    gsap.from(img, {
+      scrollTrigger: {
+        trigger: img,
+        start: "top 80%",
+        end: "bottom 20%",
+        toggleActions: "play none none reverse"
+      },
+      y: 50,
+      opacity: 0,
+      duration: 1,
+      ease: "power2.out"
+    });
+  });
+
+  
+  
+</script>
+</body>
+</html>
