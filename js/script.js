@@ -214,7 +214,7 @@ const serviceContent = {
       "We build digital ecosystems where brands don’t just exist, they perform. From websites to campaigns, everything is designed for clarity, engagement, and growth. We align content, platforms, and strategy into one cohesive digital presence. Ensuring your brand stays relevant in a fast-moving, attention-driven world.",
     services:
       "Campaign Strategy,Influencer marketing ,Digital Ads ,content creation (conception and production),Photo & Video,Live Production ,Check MONK-E services for digital ",
-    video: "./video/digital.mp4"
+    video: "./video/Digital.mp4"
   },
 
   merch: {
@@ -223,7 +223,7 @@ const serviceContent = {
       "We shape products that reflect your brand’s promise in form, function, and feel. From packaging to presentation, every detail is crafted to enhance desirability. We bridge strategy and sensory experience to create products people connect with. So what you offer isn’t just used — it’s chosen, valued, and remembered.",
     services:
       "Product Design,Prototype ,Product photography ,360 deg visuals ,Production? ",
-    video: "./video/Product.mp4"
+    video: "./video/product.mp4"
   }
 };
 
@@ -418,7 +418,6 @@ const aboutVideo = document.getElementById("aboutVideo");
 
 if (aboutVideo) {
 
-  /* play / pause video on section enter */
   ScrollTrigger.create({
     trigger: ".about",
     start: "top center",
@@ -433,29 +432,25 @@ if (aboutVideo) {
     scrollTrigger: {
       trigger: ".about",
       start: "top top",
-      end: "+=160%",
-      scrub: true,
+      end: "+=10%",
+      scrub: 1,
       pin: true,
       anticipatePin: 1
     }
   });
 
-  /* text reveal only once */
   tl.from(".about-content", {
-    y: 40,
+    y: 30,
     opacity: 0,
-    duration: 0.8,
-    ease: "power3.out"
+    duration: 0.6,
+    ease: "power2.out"
   });
 
-  /* video subtle premium motion only */
   tl.to(".about-video", {
-    scale: 1.06,
-    y: -18,
-    rotate: 0.5,
+    scale: 1.04,
+    y: -10,
     ease: "none"
-  }, 0.15);
-
+  }, 0);
 }
 // BACK TO TOP
 const topBtn = document.getElementById("topBtn");

@@ -23,11 +23,16 @@
 
 <link rel="icon" type="image/png" sizes="32x32" href="./image/favicon-32.png">
 <link rel="icon" type="image/png" sizes="16x16" href="./image/favicon-16.png">
-<link rel="apple-touch-icon" href="./image/apple-touch-icon.png">
+
 
 <link rel="canonical" href="https://elegans.com/work/">
 <link rel="stylesheet" href="./css/styles.css">
+<link rel="stylesheet" href="./css/viewgallary.css">
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+<!-- GSAP FIRST -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"></script>
 
 
 
@@ -56,7 +61,7 @@ width:100%;
 
 /* LEFT */
 .work-kicker{
-color:#ffdc84;
+color:#d9ac47;
 letter-spacing:1px;
 font-size:36px;
 font-weight: 700;
@@ -381,6 +386,15 @@ font-size:30px;
   outline-offset:6px;
 }
 
+
+.menu-popup {
+  display: none;
+}
+
+.menu-popup.active {
+  display: block;
+}
+
 </style>
 </head>
 
@@ -406,7 +420,6 @@ font-size:30px;
   <div class="menu-popup" id="menuPopup">
     <a href="index.html">Home</a>
     <a href="aboutelegans.html">Our Philosophy</a>
-
     <a href="services.html">Services</a>
     <a href="work.html">Our Work</a>
     <a href="culture.html">Our DNA</a>
@@ -451,163 +464,254 @@ font-size:30px;
 
 </section>
 
-<!-- FULL WIDTH IMAGE SECTION -->
- <!-- ===============================
- PREMIUM WORK SHOWCASE GRID
- Faster loading + no image cut
-================================ -->
+    <section class="gallery-wrap">
 
-<!-- FULL FEATURE -->
-<section class="showcase-wide">
+        <div class="gallery-grid">
 
-  <a href="p1casestudy.html" class="showcase-media">
-    <img 
-      src="./image/Automobile1.jpg"
-      alt="Automobile Project"
-      loading="lazy"
-      decoding="async"
-      width="1600"
-      height="900">
-  </a>
+            <!-- ITEM -->
+            <div class="gallery-card">
+                <img src="./image/Automobile1.jpg" alt="" loading="lazy" decoding="async" width="800" height="1000">
+                
+            </div>
 
-  <div class="showcase-content">
-    <span class="showcase-tag">Industry</span>
-    <h2>Automobiles Industry</h2>
-    <p>
-      Premium visual storytelling and branding crafted for performance-driven
-      automotive experiences.
-    </p>
-    <a href="Automobiles.html" class="cta-btn">View Images</a>
-  </div>
+            <div class="gallery-card">
+                <img src="./image/Automobile2.jpg" alt="" loading="lazy" decoding="async" width="800" height="1000">
+                
+            </div>
 
-</section>
+            <div class="gallery-card">
+                <img src="./image/Automobile3.jpg" alt="" loading="lazy" decoding="async" width="800" height="1000">
+                
+            </div>
 
+            <div class="gallery-card">
+                <img src="./image/Automobile4.jpg" alt="" loading="lazy" decoding="async" width="800" height="1000">
+                
+            </div>
 
-<!-- TWO COLUMN -->
-<section class="showcase-grid">
+            <div class="gallery-card">
+                <img src="./image/Automobile5.jpg" alt="" loading="lazy" decoding="async" width="800" height="1000">
+               
+            </div>
 
-  <!-- FOOD -->
-  <article class="showcase-card">
+            <div class="gallery-card">
+                <img src="./image/Automobile6.jpg" alt="" loading="lazy" decoding="async" width="800" height="1000">
+                
+            </div>
 
-    <a href="food.html" class="card-media">
-      <img 
-        src="./image/food1.jpg"
-        alt="Food Project"
-        loading="lazy"
-        decoding="async"
-        width="900"
-        height="700">
-    </a>
+            <div class="gallery-card">
+                <img src="./image/Automobile7.jpg" alt="" loading="lazy" decoding="async" width="800" height="1000">
+                
+            </div>
 
-    <div class="card-content">
-      <span class="showcase-tag">Category</span>
-      <h3>Food</h3>
-      <p>Creative product visuals crafted to increase appetite and engagement.</p>
-      <a href="food.html" class="cta-btn">View Images</a>
-    </div>
+            <div class="gallery-card">
+                <img src="./image/Automobile8.jpg" alt="" loading="lazy" decoding="async" width="800" height="1000">
+                
+            </div>
 
-  </article>
+            <div class="gallery-card">
+                <img src="./image/Automobile9.jpg" alt="" loading="lazy" decoding="async" width="800" height="1000">
+                
+            </div>
 
-  <!-- INDUSTRIAL -->
-  <article class="showcase-card">
+            <!-- ITEM -->
+            <div class="gallery-card">
+                <img src="./image/food2.jpg" alt="" loading="lazy" decoding="async" width="800" height="1000">
+               
+            </div>
 
-    <a href="industrial.html" class="card-media">
-      <img 
-        src="./image/indstrial1.jpg"
-        alt="Industrial Project"
-        loading="lazy"
-        decoding="async"
-        width="900"
-        height="700">
-    </a>
+            <div class="gallery-card">
+                <img src="./image/food3.jpg" alt="" loading="lazy" decoding="async" width="800" height="1000">
+              
+            </div>
 
-    <div class="card-content">
-      <span class="showcase-tag">Category</span>
-      <h3>Industrial</h3>
-      <p>Precision-led branding visuals built for strong industrial identity.</p>
-      <a href="industrial.html" class="cta-btn">View Images</a>
-    </div>
+            <div class="gallery-card">
+                <img src="./image/food4.jpg" alt="" loading="lazy" decoding="async" width="800" height="1000">
+               
+            </div>
 
-  </article>
+            <div class="gallery-card">
+                <img src="./image/food5.jpg" alt="" loading="lazy" decoding="async" width="800" height="1000">
+               
+            </div>
 
-</section>
+            <div class="gallery-card">
+                <img src="./image/food1.jpg" alt="" loading="lazy" decoding="async" width="800" height="1000">
+                
+            </div>
 
+             <!-- ITEM -->
+            <div class="gallery-card">
+                <img src="./image/indstrial1.jpg" alt="" loading="lazy" decoding="async" width="800" height="1000">
+              
+            </div>
 
-<!-- FULL FEATURE -->
-<section class="showcase-wide">
+            <div class="gallery-card">
+                <img src="./image/industrial2.jpg" alt="" loading="lazy" decoding="async" width="800" height="1000">
+               
+            </div>
 
-  <a href="interior.html" class="showcase-media">
-    <img 
-      src="./image/interior1.jpg"
-      alt="Interior Project"
-      loading="lazy"
-      decoding="async"
-      width="1600"
-      height="900">
-  </a>
+            <div class="gallery-card">
+                <img src="./image/industrial3.jpg" alt="" loading="lazy" decoding="async" width="800" height="1000">
+                
+            </div>
 
-  <div class="showcase-content">
-    <span class="showcase-tag">Space</span>
-    <h2>Interior</h2>
-    <p>
-      Elegant brand environments and premium interior visual communication.
-    </p>
-    <a href="interior.html" class="cta-btn">View Images</a>
-  </div>
+            <div class="gallery-card">
+                <img src="./image/industrial4.jpg" alt="" loading="lazy" decoding="async" width="800" height="1000">
+              
+            </div>
 
-</section>
+            <div class="gallery-card">
+                <img src="./image/industrial5.jpg" alt="" loading="lazy" decoding="async" width="800" height="1000">
+               
+            </div>
 
+            
+            <!-- ITEM -->
+            <div class="gallery-card">
+                <img src="./image/interior2.jpg" alt="" loading="lazy" decoding="async" width="800" height="1000">
+                
+            </div>
 
-<!-- TWO COLUMN -->
-<section class="showcase-grid">
+            <div class="gallery-card">
+                <img src="./image/interior1.jpg" alt="" loading="lazy" decoding="async" width="800" height="1000">
+                
+            </div>
 
-  <!-- PRODUCT FOOD -->
-  <article class="showcase-card">
+            <div class="gallery-card">
+                <img src="./image/interior3.jpg" alt="" loading="lazy" decoding="async" width="800" height="1000">
+                
+            </div>
 
-    <a href="productfood.html" class="card-media">
-      <img 
-        src="./image/product food2.jpg"
-        alt="Product Food"
-        loading="lazy"
-        decoding="async"
-        width="900"
-        height="700">
-    </a>
+            <div class="gallery-card">
+                <img src="./image/interior4.jpg" alt="" loading="lazy" decoding="async" width="800" height="1000">
+              
+            </div>
 
-    <div class="card-content">
-      <span class="showcase-tag">Category</span>
-      <h3>Product</h3>
-      <p>Modern packaging visuals and premium edible product storytelling.</p>
-      <a href="productfood.html" class="cta-btn">View Images</a>
-    </div>
+            <div class="gallery-card">
+                <img src="./image/interior5.jpg" alt="" loading="lazy" decoding="async" width="800" height="1000">
+                
+            </div>
 
-  </article>
+            <!-- ITEM -->
+            <div class="gallery-card">
+                <img src="./image/product food2.jpg" alt="" loading="lazy" decoding="async" width="800" height="1000">
+                
+            </div>
 
-  <!-- TVC -->
-  <article class="showcase-card">
+            <div class="gallery-card">
+                <img src="./image/product food3.jpg" alt="" loading="lazy" decoding="async" width="800" height="1000">
+                
+            </div>
 
-    <a href="tvc.html" class="card-media">
-      <img 
-        src="./image/tvc1.jpg"
-        alt="TVC Project"
-        loading="lazy"
-        decoding="async"
-        width="900"
-        height="700">
-    </a>
+            <div class="gallery-card">
+                <img src="./image/product food4.jpg" alt="" loading="lazy" decoding="async" width="800" height="1000">
+               
+            </div>
 
-    <div class="card-content">
-      <span class="showcase-tag">Media</span>
-      <h3>TVC</h3>
-      <p>High-impact campaign visuals designed for cinematic communication.</p>
-      <a href="tvc.html" class="cta-btn">View Images</a>
-    </div>
+            <div class="gallery-card">
+                <img src="./image/product food5.jpg" alt="" loading="lazy" decoding="async" width="800" height="1000">
+                
+            </div>
 
-  </article>
+            <div class="gallery-card">
+                <img src="./image/product food6.jpg" alt="" loading="lazy" decoding="async" width="800" height="1000">
+               
+            </div>
 
-</section>
+            <div class="gallery-card">
+                <img src="./image/product food7.jpg" alt="" loading="lazy" decoding="async" width="800" height="1000">
+                
+            </div>
 
+            <div class="gallery-card">
+                <img src="./image/product food8.jpg" alt="" loading="lazy" decoding="async" width="800" height="1000">
+                
+            </div>
 
+            <div class="gallery-card">
+                <img src="./image/product food9.jpg" alt="" loading="lazy" decoding="async" width="800" height="1000">
+                
+            </div>
+
+            <div class="gallery-card">
+                <img src="./image/product food10.jpg" alt="" loading="lazy" decoding="async" width="800" height="1000">
+               
+            </div>
+
+            <div class="gallery-card">
+                <img src="./image/product food11.jpg" alt="" loading="lazy" decoding="async" width="800" height="1000">
+                
+            </div>
+
+            <div class="gallery-card">
+                <img src="./image/product food12.jpg" alt="" loading="lazy" decoding="async" width="800" height="1000">
+               
+            </div>
+
+            <!-- ITEM -->
+            <div class="gallery-card">
+                <img src="./image/tvc2.jpg" alt="" loading="lazy" decoding="async" width="800" height="1000">
+                
+            </div>
+
+            <div class="gallery-card">
+                <img src="./image/tvc1.jpg" alt="" loading="lazy" decoding="async" width="800" height="1000">
+                
+            </div>
+
+            <div class="gallery-card">
+                <img src="./image/tvc3.jpg" alt="" loading="lazy" decoding="async" width="800" height="1000">
+                
+            </div>
+
+            
+
+            
+
+            <div class="gallery-card">
+                <img src="./image/tvc6.jpg" alt="" loading="lazy" decoding="async" width="800" height="1000">
+                
+            </div>
+
+            
+
+            <div class="gallery-card">
+                <img src="./image/tvc9.jpg" alt="" loading="lazy" decoding="async" width="800" height="1000">
+                
+            </div>
+
+            <div class="gallery-card">
+                <img src="./image/tvc10.jpg" alt="" loading="lazy" decoding="async" width="800" height="1000">
+               
+            </div>
+
+            <div class="gallery-card">
+                <img src="./image/tvc11.jpg" alt="" loading="lazy" decoding="async" width="800" height="1000">
+                
+            </div>
+            <div class="gallery-card">
+                <img src="./image/tvc12.jpg" alt="" loading="lazy" decoding="async" width="800" height="1000">
+                
+            </div>
+            <div class="gallery-card">
+                <img src="./image/tvc13.jpg" alt="" loading="lazy" decoding="async" width="800" height="1000">
+                
+            </div>
+
+            <div class="gallery-card">
+                <img src="./image/tvc14.jpg" alt="" loading="lazy" decoding="async" width="800" height="1000">
+                
+            </div>
+
+            <div class="gallery-card">
+                <img src="./image/tvc15.jpg" alt="" loading="lazy" decoding="async" width="800" height="1000">
+                
+            </div>
+
+        </div>
+
+    </section>
 
 <section>
   <div class="philo-action-wrap">
@@ -624,9 +728,7 @@ font-size:30px;
     <div class="footer-brand">
       <img src="./image/logo_elegans_tm.png" alt="ELEGANS Creative Branding Studio Logo" class="footer-logo">
       <p class="footer-desc">
-        Creative branding studio delivering brand strategy, 
-        visual identity, digital campaigns, and 
-        storytelling for global brands.
+        We are brand architects for growth, building brands from concept to category leader with purpose, clarity, and precision.
 
       </p>
     </div>
@@ -634,12 +736,18 @@ font-size:30px;
     <!-- Column 2 – Contact -->
     <div class="footer-contact">
       <h3>Contact</h3>
+
       <p>
-        <strong>Email</strong><br>
+        <strong>
+          <i class="fa-solid fa-envelope"></i>
+        </strong><br>
         <a href="mailto:contact@elegansinc.com">contact@elegansinc.com</a>
       </p>
+
       <p>
-        <strong>Phone</strong><br>
+        <strong>
+          <i class="fa-solid fa-phone"></i>
+        </strong><br>
         <a href="tel:+919176040552">+91 91760 40552</a>
       </p>
     </div>
@@ -647,7 +755,7 @@ font-size:30px;
     <!-- Column 3 – Addresses -->
     <!-- Column 3 – Locations -->
 <div class="footer-addresses">
-  <h3>Our Locations</h3>
+  <h3>Our Offices</h3>
 
   <ul class="location-list">
     <li data-city="Chennai, India"
@@ -685,7 +793,7 @@ London EC1V 2NX, United Kingdom">
   <!-- Bottom bar -->
   <div class="footer-bottom">
     <p>© <span id="footerYear"></span> ELEGANS — All Rights Reserved</p>
-    <p>Creative Branding Studio | India • UK</p>
+    <p>Brand Architecture | India • UK</p>
   </div>
 
 </footer>
@@ -701,9 +809,14 @@ London EC1V 2NX, United Kingdom">
 
   </div>
 </div>
+<!-- ============ BACK TO TOP ARROW ============ -->
+<div id="topBtn" class="top-arrow">
+    <i class="fa-solid fa-arrow-up"></i>
+</div>
 
+<!-- YOUR SCRIPT LAST -->
 <script src="js/script.js"></script>
-<!-- GSAP ANIMATIONS -->
+
 <script>
     window.addEventListener('load', () => {
   document.getElementById('preloader').style.display = 'none';
@@ -725,6 +838,7 @@ London EC1V 2NX, United Kingdom">
       ease: "power2.out"
     });
   });
+
 
   
   

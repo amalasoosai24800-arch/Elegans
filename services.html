@@ -63,26 +63,34 @@
   </div>
 </header>
 
+
+
+
+
 <section class="hero-section">
-  <img src="./image/teampic.jpeg" class="hero-bg" alt=""> <!-- change image name -->
-  <div class="hero-overlay"></div>
 
   <div class="hero-container">
 
-    <div class="hero-content-left">
-      <h1>Our Services</h1>
+    <!-- LEFT SIDE -->
+    <div class="hero-left">
+      <span class="kicker">OUR SERVICES</span>
+
+      <h1>
+        We shape how brands look, feel, and live creating meaningful growth without losing their core.
+      </h1>
+
+        <a href="contact.html" class="btn-appointment">Schedule Appointment</a>
     </div>
 
-    <div class="hero-divider"></div>
-
-    <div class="hero-content-right">
-      <p>
-        We shape how brands look, feel, and live— creating meaningful growth without losing their core.
-      </p>
-      <a href="contact.html" class="btn-appointment">Schedule Appointment</a>
+    <!-- RIGHT SIDE -->
+    <div class="hero-right">
+      <div class="image-card">
+        <img src="./image/all characters.png" alt="Creative Work">
+      </div>
     </div>
 
   </div>
+
 </section>
 
 
@@ -192,7 +200,7 @@
 
     <!-- LOGO FIRST -->
     <div class="logo-side">
-      <div class="logo-ring">S</div>
+      <div class="logo-ring"><img src="image/Elegans Branding_logo.svg"></div>
       <h3>ELEGANS</h3>
       <span>SERVICES</span>
     </div>
@@ -202,7 +210,7 @@
 
     <!-- STEP 1 -->
     <div class="process-step">
-      <div class="hex-icon">?</div>
+      <div class="hex-icon"><img src="image/wheel1.png"></div>
       
       <div class="info-card">
         <h4>Question</h4>
@@ -212,7 +220,7 @@
 
     <!-- STEP 2 -->
     <div class="process-step">
-      <div class="hex-icon">💡</div>
+      <div class="hex-icon"><img src="image/wheel2.png"></div>
       
       <div class="info-card">
         <h4>Insight</h4>
@@ -222,7 +230,7 @@
 
     <!-- STEP 3 -->
     <div class="process-step">
-      <div class="hex-icon">▽</div>
+      <div class="hex-icon"><img src="image/wheel3.png"></div>
       
       <div class="info-card">
         <h4>Fold</h4>
@@ -232,7 +240,7 @@
 
     <!-- STEP 4 -->
     <div class="process-step">
-      <div class="hex-icon">⬡</div>
+      <div class="hex-icon"><img src="image/wheel4.png"></div>
       
       <div class="info-card">
         <h4>Form</h4>
@@ -261,8 +269,8 @@
 
 .mini-title{
   color:#d4af37;
-  letter-spacing:4px;
-  font-size:13px;
+  letter-spacing:1px;
+  font-size:20px;
   display:block;
   margin-bottom:15px;
 }
@@ -274,7 +282,7 @@
 }
 
 .approach-head h2 span{
-  color:#d4af37;
+  color:#d9ac47;
 }
 
 /* GRID */
@@ -464,7 +472,7 @@
 
         <div class="service-box">
             <div class="icon-circle">
-                <img src="/image/creative.jpg">
+                <img src="/image/creative.png">
             </div>
             <div class="service-title">Creative</div>
             <p>We shape how brands look, feel, and communicate from identity to campaigns and content bringing clarity to your story and sharpening how you show up in the world.</p>
@@ -472,7 +480,7 @@
 
         <div class="service-box">
             <div class="icon-circle">
-                <img src="/image/brandex.jpg">
+                <img src="/image/brandex.png">
             </div>
             <div class="service-title">Brand Ex</div>
             <p>We design how people experience your brand across every touchpoint; building consistency, trust, and meaningful connections.</p>
@@ -480,7 +488,7 @@
 
         <div class="service-box">
             <div class="icon-circle">
-                <img src="/image/digital.jpg">
+                <img src="/image/digital.png">
             </div>
             <div class="service-title">Digital</div>
             <p>We help brands live and perform in the digital world through platforms, campaigns, and content ecosystems aligned with growth.</p>
@@ -488,7 +496,7 @@
 
         <div class="service-box">
             <div class="icon-circle">
-               <img src="/image/product.jpg">
+               <img src="/image/product.png">
             </div>
             <div class="service-title">Product</div>
             <p>We shape how your brand shows up through your product; from identity and packaging to launch and experience ensuring it feels relevant, desirable, and aligned with your promise.</p>
@@ -513,9 +521,7 @@
     <div class="footer-brand">
       <img src="./image/logo_elegans_tm.png" alt="ELEGANS Creative Branding Studio Logo" class="footer-logo">
       <p class="footer-desc">
-        Creative branding studio delivering brand strategy, 
-        visual identity, digital campaigns, and 
-        storytelling for global brands.
+        We are brand architects for growth, building brands from concept to category leader with purpose, clarity, and precision.
 
       </p>
     </div>
@@ -523,12 +529,18 @@
     <!-- Column 2 – Contact -->
     <div class="footer-contact">
       <h3>Contact</h3>
+
       <p>
-        <strong>Email</strong><br>
+        <strong>
+          <i class="fa-solid fa-envelope"></i>
+        </strong><br>
         <a href="mailto:contact@elegansinc.com">contact@elegansinc.com</a>
       </p>
+
       <p>
-        <strong>Phone</strong><br>
+        <strong>
+          <i class="fa-solid fa-phone"></i>
+        </strong><br>
         <a href="tel:+919176040552">+91 91760 40552</a>
       </p>
     </div>
@@ -536,7 +548,7 @@
     <!-- Column 3 – Addresses -->
     <!-- Column 3 – Locations -->
 <div class="footer-addresses">
-  <h3>Our Locations</h3>
+  <h3>Our Offices</h3>
 
   <ul class="location-list">
     <li data-city="Chennai, India"
@@ -554,7 +566,8 @@ Adyar, Chennai, Tamil Nadu - 600020">
     </li>-->
 
     <li data-city="London, UK"
-        data-address="Elegans Branding Pvt Ltd, City Road London EC1V 2NX, United Kingdom">
+        data-address="124 City Road
+    London EC1V 2NX, United Kingdom">
         United Kingdom
     </li>
   </ul>
