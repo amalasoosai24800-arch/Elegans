@@ -225,7 +225,7 @@ header {
 .services-section {
   min-height: 140vh;
   padding: 140px 6%;
-  background: #0b0b0b;
+  background: black;
   color: #fff;
 }
 
@@ -311,6 +311,157 @@ header {
 .services-panel:hover span {
   opacity: 0;
 }
+
+
+
+
+
+/* =========================================
+   INTEGRATION SECTION   ( brand Strategy)
+========================================= */
+.integration-section {
+  padding: 10px 6%;
+  background: black;
+  color: #fff;
+  text-align: center;
+}
+
+.integration-title {
+  font-size: clamp(2.5rem, 5vw, 4rem);
+  font-weight: 700;
+  color: #d9ac47;
+  margin-bottom: 10px;
+}
+
+.integration-subtitle {
+  font-size: 1.5rem;
+  color: #fff;
+  margin-bottom: 60px;
+}
+
+/* GRID */
+.integration-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 40px;
+  padding-top: 40px;
+}
+
+/* ITEM */
+.integration-item {
+  padding: 20px;
+  position: relative;
+}
+
+/* FULL YELLOW DOTTED LINE + RUNNING GLOW */
+.integration-item:not(:last-child)::after {
+  content: "";
+  position: absolute;
+  right: -20px;
+  top: 50%;
+  transform: translateY(-50%);
+  height: 70%;
+  width: 1px;
+
+  /* 3 layers: moving glow + base glow + dotted line */
+  background:
+    /* moving bright glow */
+    linear-gradient(
+      to bottom,
+      transparent 0%,
+      rgba(217,172,71,1) 50%,
+      transparent 100%
+    ) no-repeat,
+
+    /* soft constant glow */
+    linear-gradient(
+      to bottom,
+      rgba(217,172,71,0.3),
+      rgba(217,172,71,0.3)
+    ),
+
+    /* dotted line (now yellow) */
+    repeating-linear-gradient(
+      to bottom,
+      #d9ac47,
+      #d9ac47 4px,
+      transparent 4px,
+      transparent 8px
+    );
+
+  background-size: 
+    100% 80px,   /* moving glow size */
+    100% 100%,   /* base glow */
+    100% 100%;   /* dots */
+
+  background-position: 
+    center -80px, 
+    center,
+    center;
+
+  animation: glowRun 2.5s linear infinite;
+
+  /* extra glow for visibility */
+  box-shadow: 0 0 10px #d9ac47, 0 0 20px rgba(217,172,71,0.6);
+}
+
+/* RUNNING ANIMATION */
+@keyframes glowRun {
+  0% {
+    background-position: center -80px, center, center;
+  }
+  100% {
+    background-position: center 120%, center, center;
+  }
+}
+
+/* CONTENT */
+.integration-item .icon {
+  font-size: 32px;
+  margin-bottom: 20px;
+}
+
+.integration-item h4 {
+  font-size: 18px;
+  margin-bottom: 10px;
+  color: #d9ac47;
+
+}
+
+.integration-item p {
+  font-size: 0.95rem;
+  color: #fff;
+  line-height: 1.5;
+}
+
+.integration-item .icon img {
+  height: 100px;
+  width: 100px;
+}
+
+/* =========================================
+   RESPONSIVE
+========================================= */
+@media (max-width: 1024px) {
+  .integration-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .integration-item::after {
+    display: none;
+  }
+}
+
+@media (max-width: 600px) {
+  .integration-grid {
+    grid-template-columns: 1fr;
+  }
+}
+
+
+
+
+
 
 /* =================================================
    SERVICE TABS
@@ -735,69 +886,91 @@ header {
 
 /* ================= ABOUT SECTION ================= */
 .about{
-  position:relative;
-  height:100vh;
-  overflow:hidden;
+  position: relative;
+  padding: 60px 0; /* controls top space (adjust if needed) */
+  overflow: hidden;
 }
+
 .about-inner{
-  position:absolute;
-  inset:0;
-  display:grid;
-  grid-template-columns:1fr 1fr;
-  align-items:center;
-  gap:8vw;
-  padding:0 6vw;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  align-items: center;
+  gap: 5vw;
+  padding: 0 6vw;
 }
+
+/* VIDEO */
 .about-video{
-  position:relative;
-  width:100%;
-  height:70vh;
-  overflow:hidden;
-  border-radius:40px;
-  z-index:1;
+  width: 100%;
+  height: 60vh;
+  border-radius: 32px;
+  overflow: hidden;
 }
+
 .about-video video{
-  width:100%;
-  height:100%;
-  object-fit:cover;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
 }
-.about-content{
-  position:relative;
-  z-index:3;
-}
+
+/* CONTENT */
 .about-content h2{
-  font-size:60px;
-  font-weight:600;
-  color:#d9ac47;
-  margin-bottom:22px;
+  font-size: 56px;
+  color: #d9ac47;
+  margin-bottom: 16px;
+  padding-bottom: 30px;
 }
+
 .about-content p{
-  color:#fff;
-  font-size:17px;
-  line-height:30px;
-  max-width:520px;
-  margin-bottom:18px;
+  font-size: 16px;
+  line-height: 28px;
+  color: #fff;
+  margin-bottom: 14px;
 }
-.signature{ font-size:15px; color:#aaa; }
-.signature span{ color:#d9ac47; }
+
+/* CTA */
 .more-us{
-  display:inline-block;
-  margin-top:48px;
-  padding:14px 36px;
-  border-radius:999px;
-  border:1px solid #d9ac47;
-  color:#fff;
-  text-decoration:none;
-  font-size:14px;
-  letter-spacing:.12em;
-  font-weight:600;
-  transition:all .35s cubic-bezier(.16,1,.3,1);
+  display: inline-block;
+  margin-top: 24px;
+  padding: 12px 30px;
+  border: 1px solid #d9ac47;
+  border-radius: 999px;
+  color: #fff;
+  text-decoration: none;
 }
+
 .more-us:hover{
-  background:#d9ac47;
-  color:#111;
-  transform:translateY(-4px);
-  box-shadow:0 0 28px rgba(224,178,91,.7);
+  color: white;
+  background: #d9ac47;
+  font-weight: 300;
+
+}
+
+/* QUOTE */
+.pull-quote{
+  margin-top: 20px;
+}
+
+.pull-quote p{
+  font-size: 24px;
+  line-height: 32px;
+  padding-left: 16px;
+  border-left: 3px solid #d9ac47;
+}
+
+.quote-mark{
+  color: #d9ac47;
+}
+
+/* MOBILE */
+@media(max-width: 1024px){
+  .about-inner{
+    grid-template-columns: 1fr;
+  }
+
+  .about-video{
+    height: 45vh;
+  }
 }
 @media(max-width:1024px){
   .about-inner{ grid-template-columns:1fr; gap:40px; }
@@ -806,6 +979,38 @@ header {
 @media(max-width:600px){
   .about-content h2{ font-size:36px; }
   .about-video{ height:40vh; border-radius:24px; }
+}
+
+
+
+
+
+.pull-quote{
+  margin-top: 40px;
+  max-width: 520px;
+}
+
+.pull-quote p{
+  font-size: 26px;
+  line-height: 32px;
+  font-weight: 300;
+  color: #fff;
+  position: relative;
+  padding-left: 20px;
+  border-left: 3px solid #d9ac47;
+}
+
+/* quotation marks */
+.quote-mark{
+  color: #d9ac47;
+  font-size: 32px;
+  font-weight: 600;
+}
+
+/* subtle spacing balance */
+.pull-quote p::selection{
+  background: #d9ac47;
+  color: #111;
 }
 
 /* ================= FOOTER ================= */
@@ -954,6 +1159,24 @@ header {
 #popup-close:hover{ color:#d9ac47; }
 
 
+
+.contact-item{
+  display: flex;
+  align-items: center;
+  gap: 10px; /* 🔥 controls space between icon & text */
+  margin-bottom: 12px;
+}
+
+.contact-item i{
+  color: #d9ac47;
+  font-size: 18px;
+}
+
+.contact-item a{
+  color: #cfcfcf;
+  text-decoration: none;
+  font-size: 16px;
+}
 
 
 /*=============================*/

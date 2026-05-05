@@ -253,3 +253,10 @@ button{
     font-size: 18px;
   }
 }
+
+
+.region{
+  color: #d9ac47;
+  font-weight: 600;
+  margin-right: 6px;
+}

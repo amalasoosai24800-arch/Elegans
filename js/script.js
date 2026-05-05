@@ -200,7 +200,7 @@ const serviceContent = {
   },
 
   experience: {
-    title: "Brand Ex",
+    title: "Brand Experience",
     overview:
       " We design seamless experiences across every interaction your audience has with you. From first impression to long-term engagement, every touchpoint is thoughtfully aligned. We build consistency that fosters trust and emotional connection over time. Turning every brand moment into something meaningful and memorable.",
     services:
@@ -220,7 +220,7 @@ const serviceContent = {
   merch: {
     title: "Product",
     overview:
-      "We shape products that reflect your brand’s promise in form, function, and feel. From packaging to presentation, every detail is crafted to enhance desirability. We bridge strategy and sensory experience to create products people connect with. So what you offer isn’t just used — it’s chosen, valued, and remembered.",
+      "We shape products that reflect your brand’s promise in form, function, and feel. From packaging to presentation, every detail is crafted to enhance desirability. We bridge strategy and sensory experience to create products people connect with. So what you offer isn’t just used. It’s chosen, valued, and remembered.",
     services:
       "Product Design,Prototype ,Product photography ,360 deg visuals ,Production? ",
     video: "./video/product.mp4"
@@ -351,6 +351,37 @@ serviceCards.forEach(card => {
 
 
 
+
+
+/* =========================================================
+   TOP PANELS → SCROLL TO SERVICE & ACTIVATE
+========================================================= */
+const topPanels = document.querySelectorAll(".services-panel");
+
+topPanels.forEach(panel => {
+  panel.addEventListener("click", () => {
+    const key = panel.dataset.service;
+    const servicesSection = document.getElementById("servicesSection");
+
+    if (!key || !servicesSection) return;
+
+    // Scroll to section
+    gsap.to(window, {
+      scrollTo: { y: servicesSection, offsetY: 120 },
+      duration: 1.2,
+      ease: "power3.inOut",
+      onComplete: () => {
+        // Activate correct tab
+        const card = document.querySelector(
+          `.service-card[data-service="${key}"]`
+        );
+        if (card) card.click();
+      }
+    });
+  });
+});
+
+
 //========================= WORK SECTION SCROLL REVEAL
 const workCards = document.querySelectorAll(".work-card");
 if(workCards.length){
@@ -413,44 +444,45 @@ if(rows.length>=2){
   animateRows();
 }
 
-// ================= ABOUT SCROLL + VIDEO =================
 const aboutVideo = document.getElementById("aboutVideo");
 
 if (aboutVideo) {
 
-  ScrollTrigger.create({
-    trigger: ".about",
-    start: "top center",
-    onEnter: () => aboutVideo.play(),
-    onLeaveBack: () => aboutVideo.pause()
-  });
-
-  gsap.set(".about-video", { zIndex: 2 });
-  gsap.set(".about-content", { zIndex: 3 });
-
   const tl = gsap.timeline({
     scrollTrigger: {
       trigger: ".about",
-      start: "top top",
-      end: "+=10%",
-      scrub: 1,
-      pin: true,
-      anticipatePin: 1
+      start: "top 80%",
+      toggleActions: "play none none reverse"
     }
   });
 
-  tl.from(".about-content", {
-    y: 30,
+  /* STEP 1 — TITLE ONLY */
+  tl.from(".about-content h2", {
+    y: 40,
     opacity: 0,
-    duration: 0.6,
-    ease: "power2.out"
+    duration: 0.6
   });
 
-  tl.to(".about-video", {
-    scale: 1.04,
-    y: -10,
-    ease: "none"
-  }, 0);
+  /* STEP 2 — EVERYTHING TOGETHER */
+  tl.from(
+    [
+      ".about-content p",
+      ".pull-quote",
+      ".more-us",
+      ".about-video"
+    ],
+    {
+      y: 20,
+      opacity: 0,
+      duration: 0.6,
+      ease: "power2.out",
+      stagger: 0.1, // small stagger but still feels together
+      onStart: () => {
+        aboutVideo.play().catch(()=>{});
+      }
+    },
+    "+=0.1" // tiny gap after title (optional)
+  );
 }
 // BACK TO TOP
 const topBtn = document.getElementById("topBtn");
